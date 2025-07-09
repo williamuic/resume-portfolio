@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Will Wei - Full Stack Developer Portfolio",
-  description: "Professional portfolio of Will Wei, a Full Stack Developer and Software Engineer specializing in React, Next.js, and modern web technologies.",
+  title: "Eri Zhang's Portfolio",
+  description: "Professional portfolio of Eri Zhang, showcasing fashion, film, and creative work.",
 };
 
 export default function RootLayout({
