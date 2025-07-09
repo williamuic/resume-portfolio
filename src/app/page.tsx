@@ -1,103 +1,256 @@
-import Image from "next/image";
+"use client";
+import { useEffect } from "react";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      
+      // Get all background elements
+      const homeBg = document.getElementById('home-bg');
+      const aboutBg = document.getElementById('about-bg');
+      const fashionBg = document.getElementById('fashion-bg');
+      const filmBg = document.getElementById('film-bg');
+      const eventBg = document.getElementById('event-bg');
+      const cvBg = document.getElementById('cv-bg');
+      
+      // Calculate which section is currently in view
+      const currentSection = Math.floor(scrollY / windowHeight);
+      
+      // Reset all backgrounds
+      [homeBg, aboutBg, fashionBg, filmBg, eventBg, cvBg].forEach(bg => {
+        if (bg) bg.style.opacity = '0';
+      });
+      
+      // Show the appropriate background
+      const backgrounds = [homeBg, aboutBg, fashionBg, filmBg, eventBg, cvBg];
+      if (backgrounds[currentSection]) {
+        backgrounds[currentSection].style.opacity = '1';
+      }
+    };
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  return (
+    <div className="relative min-h-screen w-full" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+      {/* Fixed Backgrounds with Transition Effect */}
+      <div className="fixed inset-0 w-full h-full z-0">
+        {/* Home Background */}
+        <div className="absolute inset-0 transition-opacity duration-1000" id="home-bg">
+          <img
+            src="/hero.jpg"
+            alt="Hero Background"
+            className="object-cover w-full h-full"
+            style={{ objectPosition: 'center', filter: 'brightness(1.25) contrast(1.1)' }}
+          />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        
+        {/* About Background */}
+        <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="about-bg">
+          <img
+            src="/Personal_webpage/BACKGROUND/2ABOUT.jpg"
+            alt="About Background"
+            className="object-cover w-full h-full"
+            style={{ objectPosition: 'center' }}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        
+        {/* Fashion Background */}
+        <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="fashion-bg">
+          <img
+            src="/Personal_webpage/BACKGROUND/3FASHION.jpg"
+            alt="Fashion Background"
+            className="object-cover w-full h-full"
+            style={{ objectPosition: 'center' }}
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        
+        {/* Film Background */}
+        <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="film-bg">
+          <img
+            src="/Personal_webpage/BACKGROUND/4FILM.jpg"
+            alt="Film Background"
+            className="object-cover w-full h-full"
+            style={{ objectPosition: 'center' }}
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        
+        {/* Event Background */}
+        <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="event-bg">
+          <img
+            src="/Personal_webpage/BACKGROUND/5EVENT.jpg"
+            alt="Event Background"
+            className="object-cover w-full h-full"
+            style={{ objectPosition: 'center' }}
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        
+        {/* CV Background */}
+        <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="cv-bg">
+          <img
+            src="/Personal_webpage/BACKGROUND/6CV.webp"
+            alt="CV Background"
+            className="object-cover w-full h-full"
+            style={{ objectPosition: 'center' }}
+          />
+          <div className="absolute inset-0 bg-black/40" />
+        </div>
+      </div>
+
+      {/* Background Image and Home Section */}
+      <section id="home" className="relative min-h-screen w-full">
+
+        {/* Vertical Navigation */}
+        <nav className="fixed top-8 left-8 z-30 flex flex-col gap-6 items-start">
+          <a href="#home" className="text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
+          <a href="#about" className="text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>About</a>
+          <a href="#fashion" className="text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Fashion</a>
+          <a href="#film" className="text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Film</a>
+          <a href="#event" className="text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Event</a>
+          <a href="#cv" className="text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>CV</a>
+          <a href="#contact" className="text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Contact</a>
+        </nav>
+
+        {/* Centered Name */}
+        <main className="absolute inset-0 flex items-center justify-center z-10">
+          <h1 className="text-white text-4xl sm:text-6xl font-light tracking-widest text-center drop-shadow-lg select-none uppercase" style={{ fontFamily: 'inherit', letterSpacing: '0.08em' }}>
+            CHUQI ZHANG
+          </h1>
+        </main>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="relative min-h-screen flex items-center justify-center text-white">
+        <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
+        <div className="max-w-2xl mx-auto text-center z-10 relative">
+          <h2 className="text-3xl font-light tracking-widest mb-8">ABOUT</h2>
+          <p className="text-lg leading-relaxed">This is the About section. Add your content here.</p>
+        </div>
+      </section>
+
+      {/* Fashion Section */}
+      <section id="fashion" className="relative min-h-screen flex items-center justify-center text-white">
+        <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
+        <div className="max-w-4xl mx-auto text-center z-10 relative px-8">
+          <h2 className="text-3xl font-light tracking-widest mb-12">FASHION</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
+            <div className="group cursor-pointer">
+              <a href="/fashion1">
+                <img
+                  src="/Personal_webpage/FASHION/1.jpg"
+                  alt="Fashion 1"
+                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">Fashion 1</p>
+              </a>
+            </div>
+            <div className="group cursor-pointer">
+              <a href="/fashion2">
+                <img
+                  src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
+                  alt="Shanghai Fashion Week"
+                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">Shanghai Fashion Week</p>
+              </a>
+            </div>
+            <div className="group cursor-pointer">
+              <a href="/fashion3">
+                <img
+                  src="/Personal_webpage/FASHION/25SS London Fashion Week.jpg"
+                  alt="London Fashion Week"
+                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">London Fashion Week</p>
+              </a>
+            </div>
+            <div className="group cursor-pointer">
+              <a href="/fashion4">
+                <img
+                  src="/Personal_webpage/FASHION/China Luxury Pop-up thesis.jpg"
+                  alt="China Luxury Pop-up"
+                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">China Luxury Pop-up</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Film Section */}
+      <section id="film" className="relative min-h-screen flex items-center justify-center text-white">
+        <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
+        <div className="max-w-6xl mx-auto text-center z-10 relative px-8">
+          <h2 className="text-3xl font-light tracking-widest mb-12">FILM</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="group cursor-pointer">
+              <a href="/film1">
+                <img
+                  src="/Personal_webpage/FILM/film 1/Clay Whispers 1-封面.jpg"
+                  alt="Clay Whispers"
+                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">Clay Whispers</p>
+              </a>
+            </div>
+            <div className="group cursor-pointer">
+              <a href="/film2">
+                <img
+                  src="/Personal_webpage/FILM/film2/冰泉广告 英-封面.jpg"
+                  alt="冰泉广告"
+                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">冰泉广告</p>
+              </a>
+            </div>
+            <div className="group cursor-pointer">
+              <a href="/film3">
+                <img
+                  src="/Personal_webpage/FILM/MV.jpg"
+                  alt="Music Video"
+                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">Music Video</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Section */}
+      <section id="event" className="relative min-h-screen flex items-center justify-center text-white">
+        <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
+        <div className="max-w-2xl mx-auto text-center z-10 relative">
+          <h2 className="text-3xl font-light tracking-widest mb-8">EVENT</h2>
+          <p className="text-lg leading-relaxed">This is the Event section. Add your content here.</p>
+        </div>
+      </section>
+
+      {/* CV Section */}
+      <section id="cv" className="relative min-h-screen flex items-center justify-center text-white">
+        <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
+        <div className="max-w-2xl mx-auto text-center z-10 relative">
+          <h2 className="text-3xl font-light tracking-widest mb-8">CV</h2>
+          <p className="text-lg leading-relaxed">This is the CV section. Add your content here.</p>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="relative min-h-screen flex items-center justify-center bg-white text-black">
+        <a href="#home" className="fixed top-8 left-8 z-20 text-black text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl font-light tracking-widest mb-8">CONTACT</h2>
+          <p className="text-lg leading-relaxed">This is the Contact section. Add your content here.</p>
+        </div>
+            </section>
     </div>
   );
-}
+} 
