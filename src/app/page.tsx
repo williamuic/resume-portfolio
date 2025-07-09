@@ -40,7 +40,7 @@ export default function Home() {
         {/* Home Background */}
         <div className="absolute inset-0 transition-opacity duration-1000" id="home-bg">
           <img
-            src="/hero.jpg"
+            src="/hero.JPG"
             alt="Hero Background"
             className="object-cover w-full h-full"
             style={{ objectPosition: 'center', filter: 'brightness(1.25) contrast(1.1)' }}
