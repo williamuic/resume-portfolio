@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 export default function Film3() {
   return (
     <div className="min-h-screen bg-black text-white p-8">
-      <a href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
+      <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
         Home
-      </a>
+      </Link>
       
       <div className="max-w-4xl mx-auto pt-20">
         <h1 className="text-3xl font-light tracking-widest mb-8 text-center">MUSIC VIDEO</h1>
