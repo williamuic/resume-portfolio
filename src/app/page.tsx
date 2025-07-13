@@ -129,7 +129,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="relative min-h-screen flex items-center justify-center text-white">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
-        <div className="w-full max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start z-10 relative px-4 gap-8">
+        <div className="w-full max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start z-10 relative px-4 gap-16">
           {/* Avatar Rectangle */}
           <div className="flex-shrink-0 w-full md:w-[220px] h-[320px] bg-white/10 rounded-xl overflow-hidden flex items-center justify-center mb-8 md:mb-0">
             <img
@@ -140,11 +140,11 @@ export default function Home() {
             />
           </div>
           {/* About Text */}
-          <div className="flex-1 text-left">
+          <div className="flex-1 text-left md:ml-8">
             <h2 className="text-4xl md:text-5xl font-bold tracking-widest text-center md:text-left mb-8" style={{letterSpacing: '0.1em'}}>
               <span className="font-light">-</span> Eri Zhang <span className="text-pink-200 font-normal" style={{fontWeight: 400}}>(<span className="font-bold">EH‑ree</span>)</span>
             </h2>
-            <div className="space-y-6 text-base md:text-lg font-normal leading-relaxed">
+            <div className="space-y-6 text-sm md:text-base font-normal leading-relaxed">
               <p>I&apos;m a London–based creative professional working at the intersection of fashion, film and off-line events.</p>
               <p>With a dual foundation in cinematic storytelling and global brand management, I bridge creative vision and commercial impact for luxury brands. I hold a BA in Film Directing (minor in Event Planning) from Communication University of China, Nanjing, and an MA in Luxury Brand Management (with Merit) from Goldsmiths, University of London. By fusing narrative-driven film techniques with data‑informed, omnichannel marketing strategies, I help brands forge emotional connections and achieve sustainable growth in the digital age.</p>
               <p>• <b>Award‑Winning Film Director</b><br/>Wrote and directed multiple documentaries and branded shorts, winning three national film competition awards for my ability to translate brand values into compelling visual stories.</p>
