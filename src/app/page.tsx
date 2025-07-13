@@ -133,7 +133,7 @@ export default function Home() {
           {/* Avatar Rectangle */}
           <div className="flex-shrink-0 w-full md:w-[260px] h-[380px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center mt-8 md:mt-12">
             <img
-              src="/Personal_webpage/IMG_2580.JPG"
+              src="/IMG_2580.JPG"
               alt="Eri Zhang Avatar"
               className="object-cover w-full h-full"
               style={{ minHeight: '100%', minWidth: '100%' }}
