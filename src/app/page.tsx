@@ -131,9 +131,9 @@ export default function Home() {
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
         <div className="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-start z-10 relative px-2 gap-28">
           {/* Avatar Rectangle */}
-          <div className="flex-shrink-0 w-full md:w-[220px] h-[320px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center md:mt-0">
+          <div className="flex-shrink-0 w-full md:w-[260px] h-[380px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center mt-8 md:mt-12">
             <img
-              src="/avatar.jpg"
+              src="/Personal_webpage/BACKGROUND/IMG_2580.jpg"
               alt="Eri Zhang Avatar"
               className="object-cover w-full h-full"
               style={{ minHeight: '100%', minWidth: '100%' }}
