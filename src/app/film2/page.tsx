@@ -10,6 +10,14 @@ export default function Film2() {
       <div className="max-w-4xl mx-auto pt-20">
         <h1 className="text-3xl font-light tracking-widest mb-8 text-center">冰泉广告</h1>
         
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/Personal_webpage/FILM/film2/冰泉广告 英-封面.jpg" 
+            alt="冰泉广告 Cover" 
+            className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
+          />
+        </div>
+        
         <div className="mb-12">
           <video 
             controls 

@@ -10,6 +10,14 @@ export default function Film3() {
       <div className="max-w-4xl mx-auto pt-20">
         <h1 className="text-3xl font-light tracking-widest mb-8 text-center">MUSIC VIDEO</h1>
         
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/Personal_webpage/FILM/MV.jpg" 
+            alt="Music Video Cover" 
+            className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
+          />
+        </div>
+        
         <div className="mb-12">
           <video 
             controls 

@@ -10,6 +10,14 @@ export default function Film1() {
       <div className="max-w-4xl mx-auto pt-20">
         <h1 className="text-3xl font-light tracking-widest mb-8 text-center">CLAY WHISPERS</h1>
         
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/Personal_webpage/FILM/film 1/Clay Whispers 1-封面.jpg" 
+            alt="Clay Whispers Cover" 
+            className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
+          />
+        </div>
+        
         <div className="mb-12">
           <video 
             controls 
