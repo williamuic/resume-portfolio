@@ -129,19 +129,31 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="relative min-h-screen flex items-center justify-center text-white">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
-        <div className="w-full max-w-2xl mx-auto text-left z-10 relative px-4">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-widest text-center mb-8" style={{letterSpacing: '0.1em'}}>
-            <span className="font-light">-</span> Eri Zhang <span className="text-pink-200 font-normal" style={{fontWeight: 400}}>(<span className="font-bold">EH‑ree</span>)</span>
-          </h2>
-          <div className="space-y-6 text-base md:text-lg font-normal leading-relaxed">
-            <p>I&apos;m a London–based creative professional working at the intersection of fashion, film and off-line events.</p>
-            <p>With a dual foundation in cinematic storytelling and global brand management, I bridge creative vision and commercial impact for luxury brands. I hold a BA in Film Directing (minor in Event Planning) from Communication University of China, Nanjing, and an MA in Luxury Brand Management (with Merit) from Goldsmiths, University of London. By fusing narrative-driven film techniques with data‑informed, omnichannel marketing strategies, I help brands forge emotional connections and achieve sustainable growth in the digital age.</p>
-            <p>• <b>Award‑Winning Film Director</b><br/>Wrote and directed multiple documentaries and branded shorts, winning three national film competition awards for my ability to translate brand values into compelling visual stories.</p>
-            <p>• <b>High‑Net‑Worth Event Design</b><br/>Conceptualized and delivered 30+ large‑scale events and industry showcases—including a bespoke production at Nanjing Poly Theater and backstage activations at London Fashion Week—managing end‑to‑end guest experiences that resonate emotionally.</p>
-            <p>• <b>Front‑Line Luxury Retail Experience</b><br/>Served as a core promotions assistant at the Loro Piana Pop‑up in Shenzhen and the Blooming Showroom in Shanghai, honing top-tier service etiquette and multitasking skills to drive both sales and brand advocacy.</p>
-            <p>• <b>Fashion Insight & Integrated Model</b><br/>My MA thesis, &quot;The Social Media Word‑of‑Mouth Effect of Luxury Pop‑Ups,” revealed that over 60% of purchase decisions are driven by social buzz. I validated a &quot;Online Hype + Offline Experience + UGC Engagement” framework to activate and engage Gen Z luxury consumers.</p>
-            <p className="mt-6">Expertise: Brand Communication · Creative Campaigns · Film Production · Experiential Marketing</p>
-            <p>I&apos;m eager to join a luxury or fashion brand team in film production, brand marketing, creative planning, or communications management—to craft and share the next great brand story.</p>
+        <div className="w-full max-w-4xl mx-auto flex flex-col md:flex-row items-center md:items-start z-10 relative px-4 gap-8">
+          {/* Avatar Rectangle */}
+          <div className="flex-shrink-0 w-full md:w-[220px] h-[320px] bg-white/10 rounded-xl overflow-hidden flex items-center justify-center mb-8 md:mb-0">
+            <img
+              src="/avatar.jpg"
+              alt="Eri Zhang Avatar"
+              className="object-cover w-full h-full"
+              style={{ minHeight: '100%', minWidth: '100%' }}
+            />
+          </div>
+          {/* About Text */}
+          <div className="flex-1 text-left">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-widest text-center md:text-left mb-8" style={{letterSpacing: '0.1em'}}>
+              <span className="font-light">-</span> Eri Zhang <span className="text-pink-200 font-normal" style={{fontWeight: 400}}>(<span className="font-bold">EH‑ree</span>)</span>
+            </h2>
+            <div className="space-y-6 text-base md:text-lg font-normal leading-relaxed">
+              <p>I&apos;m a London–based creative professional working at the intersection of fashion, film and off-line events.</p>
+              <p>With a dual foundation in cinematic storytelling and global brand management, I bridge creative vision and commercial impact for luxury brands. I hold a BA in Film Directing (minor in Event Planning) from Communication University of China, Nanjing, and an MA in Luxury Brand Management (with Merit) from Goldsmiths, University of London. By fusing narrative-driven film techniques with data‑informed, omnichannel marketing strategies, I help brands forge emotional connections and achieve sustainable growth in the digital age.</p>
+              <p>• <b>Award‑Winning Film Director</b><br/>Wrote and directed multiple documentaries and branded shorts, winning three national film competition awards for my ability to translate brand values into compelling visual stories.</p>
+              <p>• <b>High‑Net‑Worth Event Design</b><br/>Conceptualized and delivered 30+ large‑scale events and industry showcases—including a bespoke production at Nanjing Poly Theater and backstage activations at London Fashion Week—managing end‑to‑end guest experiences that resonate emotionally.</p>
+              <p>• <b>Front‑Line Luxury Retail Experience</b><br/>Served as a core promotions assistant at the Loro Piana Pop‑up in Shenzhen and the Blooming Showroom in Shanghai, honing top-tier service etiquette and multitasking skills to drive both sales and brand advocacy.</p>
+              <p>• <b>Fashion Insight & Integrated Model</b><br/>My MA thesis, &quot;The Social Media Word‑of‑Mouth Effect of Luxury Pop‑Ups,” revealed that over 60% of purchase decisions are driven by social buzz. I validated a &quot;Online Hype + Offline Experience + UGC Engagement” framework to activate and engage Gen Z luxury consumers.</p>
+              <p className="mt-6">Expertise: Brand Communication · Creative Campaigns · Film Production · Experiential Marketing</p>
+              <p>I&apos;m eager to join a luxury or fashion brand team in film production, brand marketing, creative planning, or communications management—to craft and share the next great brand story.</p>
+            </div>
           </div>
         </div>
       </section>
