@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+
+const smallImages = [
+  "/Fashion -London fashion week/1.jpg",
+  "/Fashion -London fashion week/2.jpg",
+  "/Fashion -London fashion week/3.jpg",
+  "/Fashion -London fashion week/4.jpg",
+  "/Fashion -London fashion week/5.jpg",
+];
 
 export default function Fashion3() {
+  const [mainImg, setMainImg] = useState("/Personal_webpage/FASHION/25SS London Fashion Week.jpg");
+
   return (
     <div className="min-h-screen w-full relative flex flex-col items-center justify-center py-8 px-2 md:px-12 overflow-x-hidden">
       {/* Background */}
@@ -8,33 +18,38 @@ export default function Fashion3() {
         <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/70" />
       </div>
-      <div className="w-full max-w-7xl bg-black/70 rounded-xl shadow-2xl p-4 md:p-16 flex flex-col md:flex-row gap-14 md:gap-24 items-start">
-        {/* Left: Images */}
-        <div className="flex-1 flex flex-col items-center">
+      <div className="w-full max-w-5xl mx-auto flex flex-col items-center">
+        {/* Main Image */}
+        <div className="w-full flex justify-center mb-4">
           <img
-            src="/Personal_webpage/FASHION/25SS London Fashion Week.jpg"
-            alt="London Fashion Week Backstage"
-            className="w-full max-w-2xl rounded-lg shadow-2xl mb-6 object-cover"
-            style={{height: '420px'}}
+            src={mainImg}
+            alt="London Fashion Week Main"
+            className="rounded-xl shadow-2xl object-cover"
+            style={{ width: "100%", maxWidth: 700, height: 400, objectFit: "cover" }}
           />
-          <div className="flex gap-4 w-full justify-center">
-            <img src="/Fashion -London fashion week/1.jpg" alt="london1" className="rounded-md object-cover w-40 h-28" />
-            <img src="/Fashion -London fashion week/2.jpg" alt="london2" className="rounded-md object-cover w-40 h-28" />
-            <img src="/Fashion -London fashion week/3.jpg" alt="london3" className="rounded-md object-cover w-40 h-28" />
-            <img src="/Fashion -London fashion week/4.jpg" alt="london4" className="rounded-md object-cover w-40 h-28" />
-            <img src="/Fashion -London fashion week/5.jpg" alt="london5" className="rounded-md object-cover w-40 h-28" />
-          </div>
-          <div className="text-sm text-gray-300 mt-2">5-6张即可</div>
         </div>
-        {/* Right: Text Content */}
-        <div className="flex-[1.2] flex flex-col justify-start max-w-2xl md:max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">25SS London Fashion Week Runway</h1>
-          <div className="text-lg mb-2">Helen Anthony (2024)</div>
-          <div className="text-2xl font-semibold mb-6">Styling Intern</div>
-          <p className="mb-8 text-lg md:text-xl leading-relaxed">
+        {/* Small Images Carousel */}
+        <div className="w-full overflow-x-auto flex gap-4 mb-8 pb-2" style={{ WebkitOverflowScrolling: "touch" }}>
+          {smallImages.map((src, idx) => (
+            <img
+              key={src}
+              src={src}
+              alt={`london${idx+1}`}
+              className={`rounded-md object-cover cursor-pointer border-2 transition-all duration-200 ${mainImg === src ? "border-pink-300" : "border-transparent"}`}
+              style={{ width: 140, height: 90, flex: "0 0 auto" }}
+              onClick={() => setMainImg(src)}
+            />
+          ))}
+        </div>
+        {/* Text Content */}
+        <div className="w-full max-w-2xl text-white text-sm md:text-base ml-0 md:ml-32" style={{zIndex: 1}}>
+          <h1 className="text-2xl md:text-3xl font-bold mb-2">25SS London Fashion Week Runway</h1>
+          <div className="text-base mb-2">Helen Anthony (2024)</div>
+          <div className="text-lg font-semibold mb-4">Styling Intern</div>
+          <p className="mb-4 leading-relaxed">
             During the 2025 SS London Fashion Week, I was selected to join the backstage visual styling team of emerging luxury brand <b>Helen Anthony</b> for nearly one week.
           </p>
-          <div className="space-y-8 text-lg md:text-xl">
+          <div className="space-y-4">
             <div>
               <span className="inline-block w-4 text-pink-200 align-top">●</span>
               <span className="font-bold">Styling & Brand Collaboration</span><br/>
