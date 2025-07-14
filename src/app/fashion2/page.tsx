@@ -2,33 +2,39 @@ import React from "react";
 
 export default function Fashion2() {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center py-8 px-2 md:px-12" style={{background: 'rgba(0,0,0,0.85)'}}>
-      <div className="w-full max-w-6xl bg-black/80 rounded-xl shadow-xl p-6 md:p-12 flex flex-col md:flex-row gap-10 md:gap-16 items-start">
+    <div className="min-h-screen w-full relative flex flex-col items-center justify-center py-8 px-2 md:px-12 overflow-x-hidden">
+      {/* Background */}
+      <div className="fixed inset-0 -z-10">
+        <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-black/70" />
+      </div>
+      <div className="w-full max-w-7xl bg-black/70 rounded-xl shadow-2xl p-4 md:p-16 flex flex-col md:flex-row gap-14 md:gap-24 items-start">
         {/* Left: Images */}
         <div className="flex-1 flex flex-col items-center">
           <img
             src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
             alt="Shanghai Fashion Week Showroom"
-            className="w-full max-w-md rounded-lg shadow-lg mb-4 object-cover"
-            style={{height: '340px'}}
+            className="w-full max-w-2xl rounded-lg shadow-2xl mb-6 object-cover"
+            style={{height: '420px'}}
           />
-          <div className="flex gap-3 w-full justify-center">
-            <img src="https://placehold.co/120x80" alt="placeholder1" className="rounded-md object-cover" />
-            <img src="https://placehold.co/120x80" alt="placeholder2" className="rounded-md object-cover" />
-            <img src="https://placehold.co/120x80" alt="placeholder3" className="rounded-md object-cover" />
-            <img src="https://placehold.co/120x80" alt="placeholder4" className="rounded-md object-cover" />
+          <div className="flex gap-4 w-full justify-center">
+            <img src="/Fashion- showroom/1.png" alt="showroom1" className="rounded-md object-cover w-40 h-28" />
+            <img src="/Fashion- showroom/2.png" alt="showroom2" className="rounded-md object-cover w-40 h-28" />
+            <img src="/Fashion- showroom/3.png" alt="showroom3" className="rounded-md object-cover w-40 h-28" />
+            <img src="/Fashion- showroom/4.png" alt="showroom4" className="rounded-md object-cover w-40 h-28" />
+            <img src="/Fashion- showroom/5.jpg" alt="showroom5" className="rounded-md object-cover w-40 h-28" />
           </div>
           <div className="text-sm text-gray-300 mt-2">5-6张即可</div>
         </div>
         {/* Right: Text Content */}
-        <div className="flex-[1.2] flex flex-col justify-start">
-          <h1 className="text-3xl md:text-4xl font-bold mb-2">23SS Shanghai Fashion Week –Trade Show</h1>
+        <div className="flex-[1.2] flex flex-col justify-start max-w-2xl md:max-w-3xl">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">23SS Shanghai Fashion Week –Trade Show</h1>
           <div className="text-lg mb-2">Blooming Showroom (2022)</div>
-          <div className="text-xl font-semibold mb-4">Assistant to Manager (Brand Promotion & Buyer Relations)</div>
-          <p className="mb-6 text-base md:text-lg leading-relaxed">
+          <div className="text-2xl font-semibold mb-6">Assistant to Manager (Brand Promotion & Buyer Relations)</div>
+          <p className="mb-8 text-lg md:text-xl leading-relaxed">
             In the SS 2023 Shanghai Fashion Week, I served as a core assistant to the Blooming Showroom Manager for two weeks.
           </p>
-          <div className="space-y-6 text-base md:text-lg">
+          <div className="space-y-8 text-lg md:text-xl">
             <div>
               <span className="inline-block w-4 text-pink-200 align-top">●</span>
               <span className="font-bold">Independent Buyer Hosting</span><br/>
