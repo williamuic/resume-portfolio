@@ -13,37 +13,36 @@ export default function Fashion3() {
   const [mainImg, setMainImg] = useState("/Personal_webpage/FASHION/25SS London Fashion Week.jpg");
 
   return (
-    <div className="min-h-screen w-full relative flex flex-col items-center justify-center py-8 px-2 md:px-12 overflow-x-hidden">
+    <div className="min-h-screen w-full relative flex items-center justify-center py-8 px-2 md:px-12 overflow-x-hidden">
       {/* Background */}
       <div className="fixed inset-0 -z-10">
         <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/70" />
       </div>
-      <div className="w-full max-w-5xl mx-auto flex flex-col items-center">
-        {/* Main Image */}
-        <div className="w-full flex justify-center mb-4">
+      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12">
+        {/* Left: Images */}
+        <div className="flex flex-col items-center md:w-[520px] w-full flex-shrink-0">
           <img
             src={mainImg}
             alt="London Fashion Week Main"
-            className="rounded-xl shadow-2xl object-cover"
-            style={{ width: "100%", maxWidth: 700, height: 400, objectFit: "cover" }}
+            className="rounded-xl shadow-2xl object-cover mb-4"
+            style={{ width: "100%", maxWidth: 480, height: 320, objectFit: "cover" }}
           />
+          <div className="flex gap-3 w-full justify-center">
+            {smallImages.map((src, idx) => (
+              <img
+                key={src}
+                src={src}
+                alt={`london${idx+1}`}
+                className={`rounded-md object-cover cursor-pointer border-2 transition-all duration-200 ${mainImg === src ? "border-pink-300" : "border-transparent"}`}
+                style={{ width: 80, height: 60, flex: "0 0 auto" }}
+                onClick={() => setMainImg(src)}
+              />
+            ))}
+          </div>
         </div>
-        {/* Small Images Carousel */}
-        <div className="w-full overflow-x-auto flex gap-4 mb-8 pb-2" style={{ WebkitOverflowScrolling: "touch" }}>
-          {smallImages.map((src, idx) => (
-            <img
-              key={src}
-              src={src}
-              alt={`london${idx+1}`}
-              className={`rounded-md object-cover cursor-pointer border-2 transition-all duration-200 ${mainImg === src ? "border-pink-300" : "border-transparent"}`}
-              style={{ width: 140, height: 90, flex: "0 0 auto" }}
-              onClick={() => setMainImg(src)}
-            />
-          ))}
-        </div>
-        {/* Text Content */}
-        <div className="w-full max-w-2xl text-white text-sm md:text-base ml-0 md:ml-32" style={{zIndex: 1}}>
+        {/* Right: Text Content */}
+        <div className="flex-1 text-white text-sm md:text-base md:pl-8 mt-8 md:mt-0" style={{minWidth: 0}}>
           <h1 className="text-2xl md:text-3xl font-bold mb-2">25SS London Fashion Week Runway</h1>
           <div className="text-base mb-2">Helen Anthony (2024)</div>
           <div className="text-lg font-semibold mb-4">Styling Intern</div>
