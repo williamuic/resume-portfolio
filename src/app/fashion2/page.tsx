@@ -37,7 +37,7 @@ export default function Fashion2() {
             <div>
               <span className="inline-block w-4 text-pink-200 align-top">●</span>
               <span className="font-bold">Precise Matching & Atmosphere Creation</span><br/>
-              Quickly assessed buyers' needs to recommend brands that fit their market positioning and aesthetic; used engaging dialogue and thoughtful space presentation to enhance buyer experience and brand favorability.
+              Quickly assessed buyers&apos; needs to recommend brands that fit their market positioning and aesthetic; used engaging dialogue and thoughtful space presentation to enhance buyer experience and brand favorability.
             </div>
             <div>
               <span className="inline-block w-4 text-pink-200 align-top">●</span>
