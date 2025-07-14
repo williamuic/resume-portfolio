@@ -1,40 +1,59 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+
+const smallImages = [
+  "/Fashion- showroom/1.png",
+  "/Fashion- showroom/2.png",
+  "/Fashion- showroom/3.png",
+  "/Fashion- showroom/4.png",
+  "/Fashion- showroom/5.jpg",
+];
 
 export default function Fashion2() {
+  const [mainImg, setMainImg] = useState("/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png");
+
   return (
     <div className="min-h-screen w-full relative flex flex-col items-center justify-center py-8 px-2 md:px-12 overflow-x-hidden">
       {/* Background */}
       <div className="fixed inset-0 -z-10">
-        <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-black/70" />
+        <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" style={{opacity:0.7}} />
+        <div className="absolute inset-0 bg-black/40" />
       </div>
-      <div className="w-full max-w-7xl bg-black/70 rounded-xl shadow-2xl p-4 md:p-16 flex flex-col md:flex-row gap-14 md:gap-24 items-start">
+      {/* Title */}
+      <div className="w-full max-w-7xl mx-auto">
+        <h1 className="text-2xl md:text-4xl font-bold text-center mb-8 mt-4 md:mt-8">23SS Shanghai Fashion Week – Trade Show</h1>
+      </div>
+      {/* Content: Left image, right text */}
+      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12">
         {/* Left: Images */}
-        <div className="flex-1 flex flex-col items-center">
+        <div className="flex flex-col items-center md:w-[520px] w-full flex-shrink-0">
           <img
-            src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
-            alt="Shanghai Fashion Week Showroom"
-            className="w-full max-w-2xl rounded-lg shadow-2xl mb-6 object-cover"
-            style={{height: '420px'}}
+            src={mainImg}
+            alt="Shanghai Fashion Week Main"
+            className="rounded-xl shadow-2xl object-cover mb-4"
+            style={{ width: "100%", maxWidth: 480, height: 320, objectFit: "cover" }}
           />
-          <div className="flex gap-4 w-full justify-center">
-            <img src="/Fashion- showroom/1.png" alt="showroom1" className="rounded-md object-cover w-40 h-28" />
-            <img src="/Fashion- showroom/2.png" alt="showroom2" className="rounded-md object-cover w-40 h-28" />
-            <img src="/Fashion- showroom/3.png" alt="showroom3" className="rounded-md object-cover w-40 h-28" />
-            <img src="/Fashion- showroom/4.png" alt="showroom4" className="rounded-md object-cover w-40 h-28" />
-            <img src="/Fashion- showroom/5.jpg" alt="showroom5" className="rounded-md object-cover w-40 h-28" />
+          <div className="flex gap-3 w-full justify-center">
+            {smallImages.map((src, idx) => (
+              <img
+                key={src}
+                src={src}
+                alt={`shanghai${idx+1}`}
+                className={`rounded-md object-cover cursor-pointer border-2 transition-all duration-200 ${mainImg === src ? "border-pink-300" : "border-transparent"}`}
+                style={{ width: 80, height: 60, flex: "0 0 auto" }}
+                onClick={() => setMainImg(src)}
+              />
+            ))}
           </div>
-          <div className="text-sm text-gray-300 mt-2">5-6张即可</div>
         </div>
         {/* Right: Text Content */}
-        <div className="flex-[1.2] flex flex-col justify-start max-w-2xl md:max-w-3xl">
-          <h1 className="text-4xl md:text-5xl font-bold mb-2">23SS Shanghai Fashion Week –Trade Show</h1>
-          <div className="text-lg mb-2">Blooming Showroom (2022)</div>
-          <div className="text-2xl font-semibold mb-6">Assistant to Manager (Brand Promotion & Buyer Relations)</div>
-          <p className="mb-8 text-lg md:text-xl leading-relaxed">
+        <div className="flex-1 text-white text-sm md:text-base md:pl-8 mt-8 md:mt-0" style={{minWidth: 0}}>
+          <div className="text-base mb-2">Blooming Showroom (2022)</div>
+          <div className="text-lg font-semibold mb-4">Assistant to Manager (Brand Promotion & Buyer Relations)</div>
+          <p className="mb-4 leading-relaxed">
             In the SS 2023 Shanghai Fashion Week, I served as a core assistant to the Blooming Showroom Manager for two weeks.
           </p>
-          <div className="space-y-8 text-lg md:text-xl">
+          <div className="space-y-4">
             <div>
               <span className="inline-block w-4 text-pink-200 align-top">●</span>
               <span className="font-bold">Independent Buyer Hosting</span><br/>
