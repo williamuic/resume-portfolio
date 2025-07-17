@@ -24,7 +24,7 @@ export default function Film1() {
             className="w-full rounded-lg shadow-lg"
             poster="/Personal_webpage/FILM/film 1/Clay Whispers 1-封面.jpg"
           >
-            <source src="/Personal_webpage/FILM/film 1/film 1.mp4" type="video/mp4" />
+            <source src="https://www.dropbox.com/scl/fi/4lmgatiukmmgvip1i60ye/Nanjing-Clay-Figure-Clay-Whisper-2020.mp4?rlkey=k0gvprtgw316p6c6yuphlu4ih&st=wye87viq&raw=1" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

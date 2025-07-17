@@ -24,7 +24,7 @@ export default function Film2() {
             className="w-full rounded-lg shadow-lg"
             poster="/Personal_webpage/FILM/film2/冰泉广告 英-封面.jpg"
           >
-            <source src="/Personal_webpage/FILM/film2/冰泉广告 英.mp4" type="video/mp4" />
+            <source src="https://www.dropbox.com/scl/fi/nag3lqbqqf43fgs2miukp/Blispring-Instantly-fresh-Ready-for-flavor-emergencies-2021.mp4?rlkey=4how96wfy29c3vj00bgknaarv&st=no2ew4cs&raw=1" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
