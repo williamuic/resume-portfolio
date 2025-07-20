@@ -175,44 +175,52 @@ export default function Home() {
             {/* 1. London Fashion Week */}
             <div className="group cursor-pointer">
               <a href="/fashion3">
+                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
                 <img
                   src="/Personal_webpage/FASHION/25SS London Fashion Week.jpg"
                   alt="London Fashion Week"
-                  className="w-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
+                </div>
                 <p className="mt-4 text-lg font-light">25SS London Fashion Week Runway</p>
               </a>
             </div>
             {/* 2. Shanghai Fashion Week */}
             <div className="group cursor-pointer">
               <a href="/fashion2">
+                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
                 <img
                   src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
                   alt="Shanghai Fashion Week"
-                  className="w-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
+                </div>
                 <p className="mt-4 text-lg font-light">23SS ShangHai Fashion Week Trade Show</p>
               </a>
             </div>
             {/* 3. Luxury Pop-Up */}
             <div className="group cursor-pointer">
               <a href="/fashion4">
+                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
                 <img
                   src="/Fashion-Popup store/1.jpg"
                   alt="Luxury Pop-Up Loro Piana"
-                  className="w-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
+                </div>
                 <p className="mt-4 text-lg font-light">Luxury Pop-Up Loro Piana</p>
               </a>
             </div>
             {/* 4. Fashion 1 (Brand Report) */}
             <div className="group cursor-pointer">
               <a href="/fashion1">
+                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
                 <img
                   src="/Personal_webpage/FASHION/1.jpg"
                   alt="Brand Report-DTC Model（2022）"
-                  className="w-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
+                </div>
                 <p className="mt-4 text-lg font-light">Brand Report-DTC Model（2022）</p>
               </a>
             </div>
