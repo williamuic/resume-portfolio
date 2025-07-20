@@ -19,6 +19,12 @@ export default function Fashion3() {
         <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/70" />
       </div>
+      {/* Title and Subtitle */}
+      <div className="w-full max-w-7xl mx-auto text-center mb-4 md:mb-8">
+        <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 mt-4 md:mt-8">25SS London Fashion Week Runway</h1>
+        <div className="text-lg md:text-xl text-white font-light">Helen Anthony (2024)</div>
+        <div className="text-lg md:text-xl text-white font-semibold mb-2">Styling Intern</div>
+      </div>
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12">
         {/* Left: Images */}
         <div className="flex flex-col items-center md:w-[520px] w-full flex-shrink-0">
@@ -45,9 +51,6 @@ export default function Fashion3() {
         </div>
         {/* Right: Text Content */}
         <div className="flex-1 text-white text-sm md:text-base md:pl-8 mt-8 md:mt-0" style={{minWidth: 0}}>
-          <h1 className="text-2xl md:text-3xl font-bold mb-2">25SS London Fashion Week Runway</h1>
-          <div className="text-base mb-2">Helen Anthony (2024)</div>
-          <div className="text-lg font-semibold mb-4">Styling Intern</div>
           <p className="mb-4 leading-relaxed">
             During the 2025 SS London Fashion Week, I was selected to join the backstage visual styling team of emerging luxury brand <b>Helen Anthony</b> for nearly one week.
           </p>

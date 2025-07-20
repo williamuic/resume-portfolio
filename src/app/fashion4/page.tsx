@@ -18,9 +18,11 @@ export default function Fashion4() {
         <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" style={{opacity:0.7}} />
         <div className="absolute inset-0 bg-black/40" />
       </div>
-      {/* Title */}
-      <div className="w-full max-w-7xl mx-auto">
-        <h1 className="text-2xl md:text-4xl font-bold text-center mb-8 mt-4 md:mt-8">Luxury Pop-up Store</h1>
+      {/* Title and Subtitle */}
+      <div className="w-full max-w-7xl mx-auto text-center mb-4 md:mb-8">
+        <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 mt-4 md:mt-8">Luxury Pop-Up Loro Piana</h1>
+        <div className="text-lg md:text-xl text-white font-light">Loro Piana - Shenzhen, China (2023)</div>
+        <div className="text-lg md:text-xl text-white font-semibold mb-2">Sales Assistant</div>
       </div>
       {/* Content: Left image, right text */}
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12">
@@ -49,8 +51,6 @@ export default function Fashion4() {
         </div>
         {/* Right: Text Content */}
         <div className="flex-1 text-white text-sm md:text-base md:pl-8 mt-8 md:mt-0" style={{minWidth: 0}}>
-          <div className="text-base mb-2">Loro Piana - Shenzhen, China (2023)</div>
-          <div className="text-lg font-semibold mb-4">Sales Assistant</div>
           <p className="mb-4 leading-relaxed">
             At a Loro&nbsp;Piana Summer Resort pop‑up in Shenzhen’s luxury district, I worked as a Sales Assistant for two months, serving a high‑net‑worth clientele.
           </p>
