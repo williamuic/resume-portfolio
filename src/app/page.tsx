@@ -237,7 +237,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/film1">
                 <img
-                  src="/Personal_webpage/FILM/film 1/Clay Whispers 1-封面.jpg"
+                  src="/Film-图片/Clay Whispers 1.jpg"
                   alt="Clay Whispers"
                   className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
@@ -247,21 +247,21 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/film2">
                 <img
-                  src="/Personal_webpage/FILM/film2/冰泉广告 英-封面.jpg"
-                  alt="冰泉广告"
+                  src="/Film-图片/Ad 2.jpg"
+                  alt="Brand Ad Films"
                   className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
-                <p className="mt-4 text-lg font-light">冰泉广告</p>
+                <p className="mt-4 text-lg font-light">Brand Ad Films</p>
               </a>
             </div>
             <div className="group cursor-pointer">
               <a href="/film3">
                 <img
-                  src="/Personal_webpage/FILM/MV.jpg"
-                  alt="Music Video"
+                  src="/Film-图片/MV3.jpg"
+                  alt="Music Videos"
                   className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
-                <p className="mt-4 text-lg font-light">Music Video</p>
+                <p className="mt-4 text-lg font-light">Music Videos</p>
               </a>
             </div>
           </div>
