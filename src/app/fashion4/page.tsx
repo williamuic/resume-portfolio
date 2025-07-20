@@ -2,15 +2,14 @@
 import React, { useState } from "react";
 
 const smallImages = [
-  "/Personal_webpage/FASHION/fashion  Brand  Report/1.jpg",
-  "/Personal_webpage/FASHION/fashion  Brand  Report/2.jpg",
-  "/Personal_webpage/FASHION/fashion  Brand  Report/3.jpg",
-  "/Personal_webpage/FASHION/fashion  Brand  Report/4.jpg",
-  "/Personal_webpage/FASHION/fashion  Brand  Report/5.jpg",
+  "/Fashion-Popup store/1.jpg",
+  "/Fashion-Popup store/2.jpg",
+  "/Fashion-Popup store/3.jpg",
+  "/Fashion-Popup store/4.jpg",
 ];
 
 export default function Fashion4() {
-  const [mainImg, setMainImg] = useState("/Personal_webpage/FASHION/fashion  Brand  Report/1.jpg");
+  const [mainImg, setMainImg] = useState("/Fashion-Popup store/1.jpg");
 
   return (
     <div className="min-h-screen w-full relative flex flex-col items-center justify-center py-8 px-2 md:px-12 overflow-x-hidden">
