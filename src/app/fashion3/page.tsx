@@ -22,22 +22,24 @@ export default function Fashion3() {
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12">
         {/* Left: Images */}
         <div className="flex flex-col items-center md:w-[520px] w-full flex-shrink-0">
-          <img
-            src={mainImg}
-            alt="London Fashion Week Main"
-            className="rounded-xl shadow-2xl object-cover mb-4"
-            style={{ width: "100%", maxWidth: 480, height: 320, objectFit: "cover" }}
-          />
+          <div className="bg-black rounded-xl shadow-2xl mb-4 flex items-center justify-center" style={{ width: "100%", maxWidth: 480, height: 320 }}>
+            <img
+              src={mainImg}
+              alt="London Fashion Week Main"
+              className="object-contain w-full h-full"
+              style={{ maxWidth: 480, maxHeight: 320 }}
+            />
+          </div>
           <div className="flex gap-3 w-full justify-center">
             {smallImages.map((src, idx) => (
-              <img
-                key={src}
-                src={src}
-                alt={`london${idx+1}`}
-                className={`rounded-md object-cover cursor-pointer border-2 transition-all duration-200 ${mainImg === src ? "border-pink-300" : "border-transparent"}`}
-                style={{ width: 80, height: 60, flex: "0 0 auto" }}
-                onClick={() => setMainImg(src)}
-              />
+              <div key={src} className="bg-black rounded-md flex items-center justify-center" style={{ width: 80, height: 60, flex: "0 0 auto" }}>
+                <img
+                  src={src}
+                  alt={`london${idx+1}`}
+                  className={`object-contain w-full h-full cursor-pointer border-2 transition-all duration-200 ${mainImg === src ? "border-pink-300" : "border-transparent"}`}
+                  onClick={() => setMainImg(src)}
+                />
+              </div>
             ))}
           </div>
         </div>
