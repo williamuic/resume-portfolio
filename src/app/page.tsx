@@ -133,7 +133,7 @@ export default function Home() {
           {/* Image + Main Text Row */}
           <div className="flex flex-col md:flex-row items-start gap-28">
             {/* Avatar Rectangle */}
-            <div className="flex-shrink-0 w-full md:w-[260px] h-[380px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center ml-16 mt-8">
+            <div className="flex-shrink-0 w-full md:w-[260px] h-[380px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center ml-16 mt-24">
               <img
                 src="/IMG_2580.JPG"
                 alt="Eri Zhang Avatar"
@@ -142,8 +142,8 @@ export default function Home() {
               />
             </div>
             {/* About Text */}
-            <div className="flex-[2] text-left md:ml-8 pl-8 md:pl-24">
-              <h2 className="text-xl md:text-2xl font-bold tracking-widest text-right mb-6" style={{letterSpacing: '0.1em'}}>
+            <div className="flex-[2] text-left md:ml-8 pl-8 md:pl-24 mt-12">
+              <h2 className="text-xl md:text-2xl font-bold tracking-widest text-left mb-6" style={{letterSpacing: '0.1em'}}>
                 Eri Zhang
               </h2>
               <div className="space-y-7 text-sm md:text-base font-normal leading-relaxed text-justify">
