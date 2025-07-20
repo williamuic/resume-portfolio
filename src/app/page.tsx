@@ -121,7 +121,7 @@ export default function Home() {
         {/* Centered Name */}
         <main className="absolute inset-0 flex items-center justify-center z-10">
           <h1 className="text-white text-4xl sm:text-6xl font-light tracking-widest text-center drop-shadow-lg select-none uppercase" style={{ fontFamily: 'inherit', letterSpacing: '0.08em' }}>
-            CHUQI ZHANG
+            ERI ZHANG
           </h1>
         </main>
       </section>
@@ -141,17 +141,19 @@ export default function Home() {
           </div>
           {/* About Text */}
           <div className="flex-[2] text-left md:ml-8 pl-8 md:pl-24">
-            <h2 className="text-4xl md:text-5xl font-bold tracking-widest text-center md:text-left mb-8" style={{letterSpacing: '0.1em'}}>
-              <span className="font-light">-</span> Eri Zhang <span className="text-pink-200 font-normal" style={{fontWeight: 400}}>(<span className="font-bold">EH‑ree</span>)</span>
+            <h2 className="text-xl md:text-2xl font-bold tracking-widest text-center md:text-left mb-8" style={{letterSpacing: '0.1em'}}>
+              Eri Zhang
             </h2>
             <div className="space-y-7 text-sm md:text-base font-normal leading-relaxed text-justify">
               <p>I&apos;m a London–based creative professional working at the intersection of fashion, film and off-line events.</p>
               <p>With a dual foundation in cinematic storytelling and global brand management, I bridge creative vision and commercial impact for luxury brands. I hold a BA in Film Directing (minor in Event Planning) from Communication University of China, Nanjing, and an MA in Luxury Brand Management (with Merit) from Goldsmiths, University of London. By fusing narrative-driven film techniques with data‑informed, omnichannel marketing strategies, I help brands forge emotional connections and achieve sustainable growth in the digital age.</p>
-              <p>• <b>Award‑Winning Film Director</b><br/>Wrote and directed multiple documentaries and branded shorts, winning three national film competition awards for my ability to translate brand values into compelling visual stories.</p>
-              <p>• <b>High‑Net‑Worth Event Design</b><br/>Conceptualized and delivered 30+ large‑scale events and industry showcases—including a bespoke production at Nanjing Poly Theater and backstage activations at London Fashion Week—managing end‑to‑end guest experiences that resonate emotionally.</p>
-              <p>• <b>Front‑Line Luxury Retail Experience</b><br/>Served as a core promotions assistant at the Loro Piana Pop‑up in Shenzhen and the Blooming Showroom in Shanghai, honing top-tier service etiquette and multitasking skills to drive both sales and brand advocacy.</p>
-              <p>• <b>Fashion Insight & Integrated Model</b><br/>My MA thesis, &quot;The Social Media Word‑of‑Mouth Effect of Luxury Pop‑Ups,” revealed that over 60% of purchase decisions are driven by social buzz. I validated a &quot;Online Hype + Offline Experience + UGC Engagement” framework to activate and engage Gen Z luxury consumers.</p>
-              <p className="mt-6">Expertise: Brand Communication · Creative Campaigns · Film Production · Experiential Marketing</p>
+              <div className="space-y-10">
+                <p>• <span className="text-base md:text-lg font-bold">Award‑Winning Film Director</span><br/>Wrote and directed multiple documentaries and branded shorts, winning three national film competition awards for my ability to translate brand values into compelling visual stories.</p>
+                <p>• <span className="text-base md:text-lg font-bold">High‑Net‑Worth Event Design</span><br/>Conceptualized and delivered 30+ large‑scale events and industry showcases—including a bespoke production at Nanjing Poly Theater and backstage activations at London Fashion Week—managing end‑to‑end guest experiences that resonate emotionally.</p>
+                <p>• <span className="text-base md:text-lg font-bold">Front‑Line Luxury Retail Experience</span><br/>Served as a core promotions assistant at the Loro Piana Pop‑up in Shenzhen and the Blooming Showroom in Shanghai, honing top-tier service etiquette and multitasking skills to drive both sales and brand advocacy.</p>
+                <p>• <span className="text-base md:text-lg font-bold">Fashion Insight & Integrated Model</span><br/>My MA thesis, &quot;The Social Media Word‑of‑Mouth Effect of Luxury Pop‑Ups,” revealed that over 60% of purchase decisions are driven by social buzz. I validated a &quot;Online Hype + Offline Experience + UGC Engagement” framework to activate and engage Gen Z luxury consumers.</p>
+              </div>
+              <p className="mt-6 font-bold">Expertise: Brand Communication · Creative Campaigns · Film Production · Experiential Marketing</p>
               <p>I&apos;m eager to join a luxury or fashion brand team in film production, brand marketing, creative planning, or communications management—to craft and share the next great brand story.</p>
             </div>
           </div>
