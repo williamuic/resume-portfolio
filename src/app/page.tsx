@@ -178,7 +178,7 @@ export default function Home() {
                 <img
                   src="/Personal_webpage/FASHION/25SS London Fashion Week.jpg"
                   alt="London Fashion Week"
-                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  className="w-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
                 <p className="mt-4 text-lg font-light">25SS London Fashion Week Runway</p>
               </a>
@@ -189,7 +189,7 @@ export default function Home() {
                 <img
                   src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
                   alt="Shanghai Fashion Week"
-                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  className="w-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
                 <p className="mt-4 text-lg font-light">23SS ShangHai Fashion Week Trade Show</p>
               </a>
@@ -200,7 +200,7 @@ export default function Home() {
                 <img
                   src="/Fashion-Popup store/1.jpg"
                   alt="Luxury Pop-Up Loro Piana"
-                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  className="w-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
                 <p className="mt-4 text-lg font-light">Luxury Pop-Up Loro Piana</p>
               </a>
@@ -211,7 +211,7 @@ export default function Home() {
                 <img
                   src="/Personal_webpage/FASHION/1.jpg"
                   alt="Brand Report-DTC Model（2022）"
-                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                  className="w-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
                 <p className="mt-4 text-lg font-light">Brand Report-DTC Model（2022）</p>
               </a>
