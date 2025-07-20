@@ -133,7 +133,9 @@ export default function Home() {
           {/* Image + Main Text Row */}
           <div className="flex flex-col md:flex-row items-start gap-28">
             {/* Avatar Rectangle */}
-            <div className="flex-shrink-0 w-full md:w-[260px] h-[380px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center ml-16 mt-24">
+            <div className="flex-shrink-0 w-full md:w-[260px] h-[380px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center ml-16 mt-0 md:mt-32">
+              {/* Desktop spacer to push image down */}
+              <div className="hidden md:block" style={{ height: '48px' }} />
               <img
                 src="/IMG_2580.JPG"
                 alt="Eri Zhang Avatar"
