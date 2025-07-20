@@ -10,7 +10,7 @@ export default function Film3() {
         <h1 className="text-3xl font-light tracking-widest mb-8 text-center">Music Videos</h1>
         <div className="flex justify-center mb-8">
           <img
-            src="/Personal_webpage/FILM/MV3.jpg"
+            src="/Film-图片/MV3.jpg"
             alt="Music Videos Cover"
             className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
           />
@@ -19,7 +19,7 @@ export default function Film3() {
           <video
             controls
             className="w-full rounded-lg shadow-lg"
-            poster="/Personal_webpage/FILM/MV3.jpg"
+            poster="/Film-图片/MV3.jpg"
           >
             <source src="/Personal_webpage/FILM/film 3 mv.mov" type="video/quicktime" />
             Your browser does not support the video tag.
@@ -33,7 +33,7 @@ export default function Film3() {
         </div>
         <div className="flex justify-center mt-8">
           <img
-            src="/Personal_webpage/FILM/MV3-1.jpg"
+            src="/Film-图片/MV3-1.jpg"
             alt="Music Videos Still"
             className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
           />

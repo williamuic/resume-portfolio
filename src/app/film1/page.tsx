@@ -10,7 +10,7 @@ export default function Film1() {
         <h1 className="text-3xl font-light tracking-widest mb-8 text-center">CLAY WHISPERS</h1>
         <div className="flex justify-center mb-8">
           <img
-            src="/Personal_webpage/FILM/film 1/Clay Whispers 1-封面.jpg"
+            src="/Film-图片/Clay Whispers 1.jpg"
             alt="Clay Whispers Cover"
             className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
           />
@@ -19,7 +19,7 @@ export default function Film1() {
           <video
             controls
             className="w-full rounded-lg shadow-lg"
-            poster="/Personal_webpage/FILM/film 1/Clay Whispers 1-封面.jpg"
+            poster="/Film-图片/Clay Whispers 1.jpg"
           >
             <source src="https://www.dropbox.com/scl/fi/4lmgatiukmmgvip1i60ye/Nanjing-Clay-Figure-Clay-Whisper-2020.mp4?rlkey=k0gvprtgw316p6c6yuphlu4ih&st=wye87viq&raw=1" type="video/mp4" />
             Your browser does not support the video tag.
