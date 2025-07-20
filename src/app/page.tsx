@@ -130,14 +130,10 @@ export default function Home() {
       <section id="about" className="relative min-h-screen flex flex-col items-center justify-center text-white">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
         <div className="w-full max-w-6xl mx-auto z-10 relative px-2">
-          {/* Heading */}
-          <h2 className="text-xl md:text-2xl font-bold tracking-widest text-center mb-8" style={{letterSpacing: '0.1em'}}>
-            Eri Zhang
-          </h2>
           {/* Image + Main Text Row */}
           <div className="flex flex-col md:flex-row items-start gap-28">
             {/* Avatar Rectangle */}
-            <div className="flex-shrink-0 w-full md:w-[260px] h-[380px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center ml-8 md:ml-16">
+            <div className="flex-shrink-0 w-full md:w-[260px] h-[380px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center ml-16 mt-8">
               <img
                 src="/IMG_2580.JPG"
                 alt="Eri Zhang Avatar"
@@ -147,6 +143,9 @@ export default function Home() {
             </div>
             {/* About Text */}
             <div className="flex-[2] text-left md:ml-8 pl-8 md:pl-24">
+              <h2 className="text-xl md:text-2xl font-bold tracking-widest text-right mb-6" style={{letterSpacing: '0.1em'}}>
+                Eri Zhang
+              </h2>
               <div className="space-y-7 text-sm md:text-base font-normal leading-relaxed text-justify">
                 <p>I&apos;m a London–based creative professional working at the intersection of fashion, film and off-line events.</p>
                 <p>With a dual foundation in cinematic storytelling and global brand management, I bridge creative vision and commercial impact for luxury brands. I hold a BA in Film Directing (minor in Event Planning) from Communication University of China, Nanjing, and an MA in Luxury Brand Management (with Merit) from Goldsmiths, University of London. By fusing narrative-driven film techniques with data‑informed, omnichannel marketing strategies, I help brands forge emotional connections and achieve sustainable growth in the digital age.</p>
@@ -171,26 +170,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center z-10 relative px-8">
           <h2 className="text-3xl font-light tracking-widest mb-12">FASHION</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-            <div className="group cursor-pointer">
-              <a href="/fashion1">
-                <img
-                  src="/Personal_webpage/FASHION/1.jpg"
-                  alt="Fashion 1"
-                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
-                />
-                <p className="mt-4 text-lg font-light">Fashion 1</p>
-              </a>
-            </div>
-            <div className="group cursor-pointer">
-              <a href="/fashion2">
-                <img
-                  src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
-                  alt="Shanghai Fashion Week"
-                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
-                />
-                <p className="mt-4 text-lg font-light">Shanghai Fashion Week</p>
-              </a>
-            </div>
+            {/* 1. London Fashion Week */}
             <div className="group cursor-pointer">
               <a href="/fashion3">
                 <img
@@ -198,17 +178,40 @@ export default function Home() {
                   alt="London Fashion Week"
                   className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
-                <p className="mt-4 text-lg font-light">London Fashion Week</p>
+                <p className="mt-4 text-lg font-light">25SS London Fashion Week Runway</p>
               </a>
             </div>
+            {/* 2. Shanghai Fashion Week */}
+            <div className="group cursor-pointer">
+              <a href="/fashion2">
+                <img
+                  src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
+                  alt="Shanghai Fashion Week"
+                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">23SS ShangHai Fashion Week Trade Show</p>
+              </a>
+            </div>
+            {/* 3. Luxury Pop-Up */}
             <div className="group cursor-pointer">
               <a href="/fashion4">
                 <img
-                  src="/Personal_webpage/FASHION/China Luxury Pop-up thesis.jpg"
-                  alt="China Luxury Pop-up"
+                  src="/Fashion-Popup store/1.jpg"
+                  alt="Luxury Pop-Up Loro Piana"
                   className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
-                <p className="mt-4 text-lg font-light">China Luxury Pop-up</p>
+                <p className="mt-4 text-lg font-light">Luxury Pop-Up Loro Piana</p>
+              </a>
+            </div>
+            {/* 4. Fashion 1 (Brand Report) */}
+            <div className="group cursor-pointer">
+              <a href="/fashion1">
+                <img
+                  src="/Personal_webpage/FASHION/1.jpg"
+                  alt="Brand Report-DTC Model（2022）"
+                  className="w-full h-72 object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">Brand Report-DTC Model（2022）</p>
               </a>
             </div>
           </div>
@@ -221,48 +224,34 @@ export default function Home() {
         <div className="max-w-6xl mx-auto text-center z-10 relative px-8">
           <h2 className="text-3xl font-light tracking-widest mb-12">FILM</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* 1. London Fashion Week */}
             <div className="group cursor-pointer">
-              <a href="/fashion3">
+              <a href="/film1">
                 <img
-                  src="/Personal_webpage/FASHION/25SS London Fashion Week.jpg"
-                  alt="London Fashion Week"
+                  src="/Personal_webpage/FILM/film 1/Clay Whispers 1-封面.jpg"
+                  alt="Clay Whispers"
                   className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
-                <p className="mt-4 text-lg font-light">25SS London Fashion Week Runway</p>
+                <p className="mt-4 text-lg font-light">Clay Whispers</p>
               </a>
             </div>
-            {/* 2. Shanghai Fashion Week */}
             <div className="group cursor-pointer">
-              <a href="/fashion2">
+              <a href="/film2">
                 <img
-                  src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
-                  alt="Shanghai Fashion Week"
+                  src="/Personal_webpage/FILM/film2/冰泉广告 英-封面.jpg"
+                  alt="冰泉广告"
                   className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
-                <p className="mt-4 text-lg font-light">23SS ShangHai Fashion Week Trade Show</p>
+                <p className="mt-4 text-lg font-light">冰泉广告</p>
               </a>
             </div>
-            {/* 3. Luxury Pop-Up */}
             <div className="group cursor-pointer">
-              <a href="/fashion4">
+              <a href="/film3">
                 <img
-                  src="/Fashion-Popup store/1.jpg"
-                  alt="Luxury Pop-Up Loro Piana"
+                  src="/Personal_webpage/FILM/MV.jpg"
+                  alt="Music Video"
                   className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
                 />
-                <p className="mt-4 text-lg font-light">Luxury Pop-Up Loro Piana</p>
-              </a>
-            </div>
-            {/* 4. Fashion 1 (Brand Report) */}
-            <div className="group cursor-pointer">
-              <a href="/fashion1">
-                <img
-                  src="/Personal_webpage/FASHION/1.jpg"
-                  alt="Brand Report-DTC Model（2022）"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
-                />
-                <p className="mt-4 text-lg font-light">Brand Report-DTC Model（2022）</p>
+                <p className="mt-4 text-lg font-light">Music Video</p>
               </a>
             </div>
           </div>
