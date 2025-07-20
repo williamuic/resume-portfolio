@@ -274,6 +274,16 @@ export default function Home() {
                 <p className="mt-4 text-lg font-light">Brand Films x Xinhua New Agency</p>
               </a>
             </div>
+            <div className="group cursor-pointer">
+              <a href="/film5">
+                <img
+                  src="/Film-图片/Assistant5.jpg"
+                  alt="Commercial Production Assistant"
+                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">Commercial Production Assistant</p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
