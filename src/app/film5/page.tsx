@@ -1,12 +1,17 @@
 import Link from "next/link";
 
-// Generate all image paths from 5-1-1.jpg to 5-3-4.jpg
-const images: string[] = [];
-for (let i = 1; i <= 3; i++) {
-  for (let j = 1; j <= 4; j++) {
-    images.push(`/Film-图片/5-${i}-${j}.jpg`);
-  }
-}
+const imageFiles = [
+  "5-1-1.jpg",
+  "5-1-2.jpg",
+  "5-1-3.jpg",
+  "5-2-1.jpg",
+  "5-2-2.jpg",
+  "5-2-3.jpg",
+  "5-2-4.jpg",
+  "5-3-2.png",
+  "5-3-3.jpg",
+  "5-3-4.jpg",
+];
 
 export default function Film5() {
   return (
@@ -23,14 +28,15 @@ export default function Film5() {
             className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
           />
         </div>
-        <div className="flex flex-col gap-8 items-center">
-          {images.map((src, idx) => (
-            <img
-              key={src}
-              src={src}
-              alt={`Commercial Assistant ${idx + 1}`}
-              className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
-            />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {imageFiles.map((file, idx) => (
+            <div key={file} className="bg-black rounded-xl shadow-lg flex items-center justify-center p-2">
+              <img
+                src={`/Film-图片/${file}`}
+                alt={`Commercial Assistant ${idx + 1}`}
+                className="w-full h-auto max-h-[420px] rounded-lg object-contain bg-black"
+              />
+            </div>
           ))}
         </div>
       </div>
