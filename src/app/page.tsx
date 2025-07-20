@@ -264,6 +264,16 @@ export default function Home() {
                 <p className="mt-4 text-lg font-light">Music Videos</p>
               </a>
             </div>
+            <div className="group cursor-pointer">
+              <a href="/film4">
+                <img
+                  src="/Film-图片/Xinhua 4.png"
+                  alt="Brand Films x Xinhua New Agency"
+                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
+                />
+                <p className="mt-4 text-lg font-light">Brand Films x Xinhua New Agency</p>
+              </a>
+            </div>
           </div>
         </div>
       </section>
