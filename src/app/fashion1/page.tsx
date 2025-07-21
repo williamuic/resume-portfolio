@@ -14,6 +14,12 @@ export default function Fashion1() {
         <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" style={{opacity:0.7}} />
         <div className="absolute inset-0 bg-black/40" />
       </div>
+      {/* Navigation Bar at Top */}
+      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-4 mb-8 gap-4">
+        <Link href="/fashion4" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+        <Link href="/" className="text-white bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded transition">Home</Link>
+        <Link href="/fashion2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
+      </div>
       {/* Title and Subtitle */}
       <div className="w-full max-w-7xl mx-auto text-center mb-4 md:mb-8">
         <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 mt-4 md:mt-8">Brand Report-DTC Model</h1>
@@ -31,12 +37,6 @@ export default function Fashion1() {
             />
           </div>
         ))}
-      </div>
-      {/* Navigation */}
-      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-12 gap-4">
-        <Link href="/fashion4" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
-        <Link href="/" className="text-white bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded transition">Home</Link>
-        <Link href="/fashion2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
     </div>
   );

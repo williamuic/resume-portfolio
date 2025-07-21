@@ -3,6 +3,12 @@ import Link from "next/link";
 export default function Film1() {
   return (
     <div className="min-h-screen bg-black text-white p-8">
+      {/* Navigation Bar at Top */}
+      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-4 mb-8 gap-4">
+        <Link href="/film5" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+        <Link href="/" className="text-white bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded transition">Home</Link>
+        <Link href="/film2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
+      </div>
       <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
         Home
       </Link>
@@ -30,12 +36,6 @@ export default function Film1() {
             <li><b>Team Leadership & Narrative Development:</b> Facilitated brainstorming sessions, defined team roles, and guided on‑site shooting and editing direction.</li>
             <li><b>Outcomes & Impact:</b> Awarded First Prize nationally and archived by Chongzheng Academy, elevating the project&apos; s visibility and cultural significance.</li>
           </ul>
-        </div>
-        {/* Navigation */}
-        <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-12 gap-4">
-          <Link href="/film5" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
-          <Link href="/" className="text-white bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded transition">Home</Link>
-          <Link href="/film2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
         </div>
       </div>
     </div>
