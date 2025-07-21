@@ -7,14 +7,8 @@ export default function Film1() {
         Home
       </Link>
       <div className="max-w-4xl mx-auto pt-20">
-        <h1 className="text-3xl font-light tracking-widest mb-8 text-center">CLAY WHISPERS</h1>
-        <div className="flex justify-center mb-8">
-          <img
-            src="/Film-图片/Clay Whispers 1.jpg"
-            alt="Clay Whispers Cover"
-            className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
-          />
-        </div>
+        <h1 className="text-3xl font-bold tracking-widest mb-2 text-center">Cultural Heritage Documentary</h1>
+        <div className="text-lg text-center text-white font-light mb-8">Nanjing Clay Figure - Clay Whisper（2020）</div>
         <div className="mb-12">
           <video
             controls
@@ -36,6 +30,12 @@ export default function Film1() {
             <li><b>Team Leadership & Narrative Development:</b> Facilitated brainstorming sessions, defined team roles, and guided on‑site shooting and editing direction.</li>
             <li><b>Outcomes & Impact:</b> Awarded First Prize nationally and archived by Chongzheng Academy, elevating the project&apos; s visibility and cultural significance.</li>
           </ul>
+        </div>
+        {/* Navigation */}
+        <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-12 gap-4">
+          <Link href="/film5" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+          <Link href="/" className="text-white bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded transition">Home</Link>
+          <Link href="/film2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
         </div>
       </div>
     </div>

@@ -1,16 +1,20 @@
 import Link from "next/link";
 
-const imageFiles = [
-  "5-1-1.jpg",
-  "5-1-2.jpg",
-  "5-1-3.jpg",
-  "5-2-1.jpg",
-  "5-2-2.jpg",
-  "5-2-3.jpg",
-  "5-2-4.jpg",
-  "5-3-2.png",
-  "5-3-3.jpg",
-  "5-3-4.jpg",
+const kfcImages = [
+  "/Film-图片/5-1-1.jpg",
+  "/Film-图片/5-1-2.jpg",
+  "/Film-图片/5-1-3.jpg",
+];
+const yiliImages = [
+  "/Film-图片/5-2-1.jpg",
+  "/Film-图片/5-2-2.jpg",
+  "/Film-图片/5-2-3.jpg",
+  "/Film-图片/5-2-4.jpg",
+  "/Film-图片/5-3-2.png",
+];
+const lotteryImages = [
+  "/Film-图片/5-3-3.jpg",
+  "/Film-图片/5-3-4.jpg",
 ];
 
 export default function Film5() {
@@ -20,7 +24,7 @@ export default function Film5() {
         Home
       </Link>
       <div className="max-w-4xl mx-auto pt-20">
-        <h1 className="text-3xl font-light tracking-widest mb-8 text-center">Commercial Production Assistant</h1>
+        <h1 className="text-3xl font-bold tracking-widest mb-8 text-center">Production Assistant - Commercial Advertising Project</h1>
         <div className="flex justify-center mb-8">
           <img
             src="/Film-图片/Assistant5.jpg"
@@ -28,16 +32,47 @@ export default function Film5() {
             className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {imageFiles.map((file, idx) => (
-            <div key={file} className="bg-black rounded-xl shadow-lg flex items-center justify-center p-2">
+        {/* KFC Section */}
+        <div className="mb-12">
+          <h2 className="text-xl font-bold mb-4">KFC China Home Delivery Initiative (2020)</h2>
+          <div className="flex flex-col gap-6 items-center">
+            {kfcImages.map((src, idx) => (
               <img
-                src={`/Film-图片/${file}`}
-                alt={`Commercial Assistant ${idx + 1}`}
-                className="w-full h-auto max-h-[420px] rounded-lg object-contain bg-black"
+                key={src}
+                src={src}
+                alt={`KFC ${idx + 1}`}
+                className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
               />
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+        {/* Yili Section */}
+        <div className="mb-12">
+          <h2 className="text-xl font-bold mb-4">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
+          <div className="flex flex-col gap-6 items-center">
+            {yiliImages.map((src, idx) => (
+              <img
+                key={src}
+                src={src}
+                alt={`Yili ${idx + 1}`}
+                className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
+              />
+            ))}
+          </div>
+        </div>
+        {/* Lottery Section */}
+        <div className="mb-12">
+          <h2 className="text-xl font-bold mb-4">China Sports Lottery Promotional Project (2020)</h2>
+          <div className="flex flex-col gap-6 items-center">
+            {lotteryImages.map((src, idx) => (
+              <img
+                key={src}
+                src={src}
+                alt={`Lottery ${idx + 1}`}
+                className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

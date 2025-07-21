@@ -120,7 +120,7 @@ export default function Home() {
 
         {/* Centered Name */}
         <main className="absolute inset-0 flex items-center justify-center z-10">
-          <h1 className="text-white text-4xl sm:text-6xl font-light tracking-widest text-center drop-shadow-lg select-none uppercase" style={{ fontFamily: 'inherit', letterSpacing: '0.08em' }}>
+          <h1 className="text-white text-4xl sm:text-6xl font-light tracking-widest text-center drop-shadow-lg select-none uppercase" style={{ fontFamily: 'inherit', letterSpacing: '0.02em' }}>
             ERI ZHANG
           </h1>
         </main>
@@ -170,7 +170,7 @@ export default function Home() {
       <section id="fashion" className="relative min-h-screen flex items-center justify-center text-white">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
         <div className="max-w-4xl mx-auto text-center z-10 relative px-8">
-          <h2 className="text-3xl font-light tracking-widest mb-12">FASHION</h2>
+          <h2 className="text-3xl font-light tracking-widest mb-12 mt-16">FASHION</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             {/* 1. London Fashion Week */}
             <div className="group cursor-pointer">
@@ -201,11 +201,11 @@ export default function Home() {
             {/* 3. Luxury Pop-Up */}
             <div className="group cursor-pointer">
               <a href="/fashion4">
-                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
+                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center aspect-[5/4] overflow-hidden">
                 <img
                   src="/Fashion-Popup store/1.jpg"
                   alt="Luxury Pop-Up Loro Piana"
-                  className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
                 </div>
                 <p className="mt-4 text-lg font-light">Luxury Pop-Up Loro Piana</p>
@@ -232,56 +232,79 @@ export default function Home() {
       <section id="film" className="relative min-h-screen flex items-center justify-center text-white">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
         <div className="max-w-6xl mx-auto text-center z-10 relative px-8">
-          <h2 className="text-3xl font-light tracking-widest mb-12">FILM</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-light tracking-widest mb-12 mt-16">FILM</h2>
+          {/* Top row: 3 projects */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* 1. Cultural Heritage Documentary */}
             <div className="group cursor-pointer">
               <a href="/film1">
-                <img
-                  src="/Film-图片/Clay Whispers 1.jpg"
-                  alt="Clay Whispers"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
-                />
-                <p className="mt-4 text-lg font-light">Clay Whispers</p>
+                <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/Film-图片/Clay Whispers 1.jpg"
+                    alt="Cultural Heritage Documentary"
+                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <p className="mt-4 text-lg font-bold">Cultural Heritage Documentary</p>
+                <p className="text-base text-white font-light">Nanjing Clay Figure - Clay Whisper（2020）</p>
               </a>
             </div>
+            {/* 2. Brand Ad Films */}
             <div className="group cursor-pointer">
               <a href="/film2">
-                <img
-                  src="/Film-图片/Ad 2.jpg"
-                  alt="Brand Ad Films"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
-                />
-                <p className="mt-4 text-lg font-light">Brand Ad Films</p>
+                <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/Film-图片/Ad 2.jpg"
+                    alt="Brand Ad Films"
+                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <p className="mt-4 text-lg font-bold">Brand Ad Films</p>
+                <p className="text-base text-white font-light">Blispring– Instantly fresh! Ready for flavor emergencies（2021）</p>
               </a>
             </div>
+            {/* 3. Music Videos */}
             <div className="group cursor-pointer">
               <a href="/film3">
-                <img
-                  src="/Film-图片/MV3.jpg"
-                  alt="Music Videos"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
-                />
-                <p className="mt-4 text-lg font-light">Music Videos</p>
+                <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/Film-图片/MV3.jpg"
+                    alt="Music Videos"
+                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <p className="mt-4 text-lg font-bold">Music Videos</p>
+                <p className="text-base text-white font-light">My Dear Art（2022）</p>
               </a>
             </div>
+          </div>
+          {/* Bottom row: 2 projects, centered */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center max-w-3xl mx-auto">
+            {/* 4. Hengshun Vinegar × Xinhua News Agency */}
             <div className="group cursor-pointer">
               <a href="/film4">
-                <img
-                  src="/Film-图片/Xinhua 4.png"
-                  alt="Brand Films x Xinhua New Agency"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
-                />
-                <p className="mt-4 text-lg font-light">Brand Films x Xinhua New Agency</p>
+                <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/Film-图片/Xinhua 4.png"
+                    alt="Hengshun Vinegar × Xinhua News Agency"
+                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <p className="mt-4 text-lg font-bold">Hengshun Vinegar × Xinhua News Agency</p>
+                <p className="text-base text-white font-light">Video Ringback Tone Campaign Film (2020)</p>
               </a>
             </div>
+            {/* 5. Commercial Production Assistant */}
             <div className="group cursor-pointer">
               <a href="/film5">
-                <img
-                  src="/Film-图片/Assistant5.jpg"
-                  alt="Commercial Production Assistant"
-                  className="w-full h-80 object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
-                />
-                <p className="mt-4 text-lg font-light">Commercial Production Assistant</p>
+                <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
+                  <img
+                    src="/Film-图片/Assistant5.jpg"
+                    alt="Commercial Production Assistant"
+                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <p className="mt-4 text-lg font-bold">Commercial Production Assistant</p>
               </a>
             </div>
           </div>
@@ -292,7 +315,7 @@ export default function Home() {
       <section id="event" className="relative min-h-screen flex items-center justify-center text-white">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
         <div className="max-w-2xl mx-auto text-center z-10 relative">
-          <h2 className="text-3xl font-light tracking-widest mb-8">EVENT</h2>
+          <h2 className="text-3xl font-light tracking-widest mb-8 mt-16">EVENT</h2>
           <p className="text-lg leading-relaxed">This is the Event section. Add your content here.</p>
         </div>
       </section>
@@ -301,7 +324,7 @@ export default function Home() {
       <section id="cv" className="relative min-h-screen flex items-center justify-center text-white">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
         <div className="max-w-2xl mx-auto text-center z-10 relative">
-          <h2 className="text-3xl font-light tracking-widest mb-8">CV</h2>
+          <h2 className="text-3xl font-light tracking-widest mb-8 mt-16">CV</h2>
           <p className="text-lg leading-relaxed">This is the CV section. Add your content here.</p>
         </div>
       </section>

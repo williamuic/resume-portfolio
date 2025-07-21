@@ -7,14 +7,8 @@ export default function Film2() {
         Home
       </Link>
       <div className="max-w-4xl mx-auto pt-20">
-        <h1 className="text-3xl font-light tracking-widest mb-8 text-center">Brand Ad Films</h1>
-        <div className="flex justify-center mb-8">
-          <img
-            src="/Film-图片/Ad 2.jpg"
-            alt="Brand Ad Films Cover"
-            className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
-          />
-        </div>
+        <h1 className="text-3xl font-bold tracking-widest mb-2 text-center">Brand Ad Films</h1>
+        <div className="text-lg text-center text-white font-light mb-8">Blispring– Instantly fresh! Ready for flavor emergencies（2021）</div>
         <div className="mb-12">
           <video
             controls
@@ -28,14 +22,19 @@ export default function Film2() {
         <div className="space-y-6">
           <h2 className="text-xl font-light tracking-widest">DESCRIPTION</h2>
           <p className="text-lg leading-relaxed">
-            In my graduation project, inspired by Chen Li’s “My Dear Art,” I created a ten‑minute music video dedicated to my four years of art study. This two‑minute fantasy interlude, set to my rearranged accompaniment, intertwines visuals with my written narration. The film charts the journey from the passionate obsession upon first encountering beauty, to the realization that beauty, like the wind, cannot be held, and finally to the liberation of burning oneself for one’s passion, achieving spiritual transcendence. This excerpt showcases my command of audiovisual rhythm and atmosphere, as well as my overall coordination skills as both director and editor in thematic interpretation and emotional progression. The film was ultimately awarded Outstanding Graduation Project and selected for the UN·earth Youth Film Exhibition.
+            In the 2021 National College Students Advertising Festival, I served as director, leading a four‑person team to create a Blispring toothpaste commercial: from story ideation and scriptwriting to on‑set shooting and post‑production oversight, we prioritized “idea first” to drive cost efficiency—delivering a high‑impact narrative with precise editing and drum‑beat‑synchronized pacing within a minimal-budget, single‑location setup. The spot went on to win the National Bronze Award, validating my strengths in creative strategy, resource coordination, and efficient execution.
           </p>
+          <ul className="list-disc pl-6 space-y-2 text-lg">
+            <li><b>Creative‑Driven Cost Efficiency:</b> Prioritized a “content is king” philosophy, leveraging creative ideation and clear team roles to achieve “low budget, high impact,” with over half the project’s success attributed to the strength of the concept.</li>
+            <li><b>Post‑Production Editing:</b> Aligned cuts precisely to drum‑beat music, reinforcing narrative pacing and brand recall.</li>
+            <li><b>Outcomes:</b> Secured the National Bronze Award, demonstrating effective reach and impact on a minimal budget.</li>
+          </ul>
         </div>
-        <div className="flex justify-center mt-8">
+        <div className="flex justify-start mt-8">
           <img
             src="/Film-图片/Ad2-1.png"
             alt="Brand Ad Films Still"
-            className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
+            className="w-64 max-w-full rounded-lg shadow-2xl object-cover"
           />
         </div>
       </div>
