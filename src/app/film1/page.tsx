@@ -3,12 +3,6 @@ import Link from "next/link";
 export default function Film1() {
   return (
     <div className="min-h-screen bg-black text-white p-8">
-      {/* Navigation Bar at Top */}
-      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-4 mb-8 gap-4">
-        <Link href="/film5" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
-        <Link href="/" className="text-white bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded transition">Home</Link>
-        <Link href="/film2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
-      </div>
       <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
         Home
       </Link>
@@ -30,6 +24,12 @@ export default function Film1() {
           <p className="text-lg leading-relaxed">
             In 2020, during my junior‑year documentary course, I initiated and directed a film spotlighting the “Nanjing Clay Figurines” intangible heritage: beginning with online and community research to pinpoint clay sculpture as a local cultural gem; overcoming pandemic and resource constraints by liaising twice with Master Zhu Jiandong—an inheritor based at Chongzheng Academy(Nanjing) and advertising entrepreneur; leading multiple team brainstorms to craft interview guides and narrative structure; and directing on‑site shooting, sound recording, and interviews.
           </p>
+        </div>
+        {/* Navigation */}
+        <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-12 gap-4">
+          <Link href="/film5" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+          <Link href="/" className="text-white bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded transition">Home</Link>
+          <Link href="/film2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
         </div>
       </div>
       {/* Navigation Bar at Bottom */}
