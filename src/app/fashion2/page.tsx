@@ -21,15 +21,16 @@ export default function Fashion2() {
         <Image src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" width={1920} height={1080} className="w-full h-full object-cover" style={{opacity:0.7}} />
         <div className="absolute inset-0 bg-black/40" />
       </div>
+      {/* Home Link at Top Left */}
+      <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
+        Home
+      </Link>
       {/* Title and Subtitle */}
       <div className="w-full max-w-7xl mx-auto text-center mb-4 md:mb-8">
         <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 mt-4 md:mt-8">23SS Shanghai Fashion Week – Trade Show</h1>
         <div className="text-lg md:text-xl text-white font-light">Blooming Showroom (2022)</div>
         <div className="text-lg md:text-xl text-white font-semibold mb-2">Assistant to Manager (Brand Promotion & Buyer Relations)</div>
       </div>
-      <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
-        Home
-      </Link>
       {/* Content: Left image, right text */}
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12">
         {/* Left: Images */}
@@ -106,9 +107,9 @@ export default function Fashion2() {
         </div>
       </div>
       {/* Navigation Bar at Bottom */}
-      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
-        <Link href="/fashion1" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
-        <Link href="/fashion3" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
+      <div className="fixed bottom-8 left-8 right-8 flex justify-between items-center w-full max-w-2xl mx-auto">
+        <Link href="/fashion3" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+        <Link href="/fashion4" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
     </div>
   );

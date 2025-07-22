@@ -16,10 +16,9 @@ export default function Film3() {
             className="w-full rounded-lg shadow-lg"
             poster="/Film-图片/MV3.jpg"
           >
-            <source src="" type="video/quicktime" />
+            <source src="https://www.dropbox.com/scl/fi/dseo9d8u46l8i6v0m7qgk/My-Dear-Art-Clip-2022.mov?rlkey=x19jbvips43smxpgabgpu9jyk&st=fnbx2ok8&dl=0" type="video/quicktime" />
             Your browser does not support the video tag.
           </video>
-          
         </div>
         <div className="space-y-6">
           <h2 className="text-xl font-light tracking-widest">DESCRIPTION</h2>
@@ -38,7 +37,7 @@ export default function Film3() {
         </div>
       </div>
       {/* Navigation Bar at Bottom */}
-      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
+      <div className="fixed bottom-8 left-8 right-8 flex justify-between items-center w-full max-w-2xl mx-auto">
         <Link href="/film2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
         <Link href="/film4" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>

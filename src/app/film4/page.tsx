@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Film4() {
   return (
@@ -27,10 +28,10 @@ export default function Film4() {
         </div>
       </div>
       {/* Navigation Bar at Bottom */}
-      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
+      <div className="fixed bottom-8 left-8 right-8 flex justify-between items-center w-full max-w-2xl mx-auto">
         <Link href="/film3" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
         <Link href="/film5" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
     </div>
   );
-} 
+}

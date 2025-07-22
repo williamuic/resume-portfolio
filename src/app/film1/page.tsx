@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Film1() {
   return (
@@ -31,14 +32,12 @@ export default function Film1() {
             <li><b>Outcomes & Impact:</b> Awarded First Prize nationally and archived by Chongzheng Academy, elevating the project&apos; s visibility and cultural significance.</li>
           </ul>
         </div>
-        {/* Navigation */}
-        <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-12 gap-4">
+        {/* Navigation Bar at Bottom */}
+        <div className="fixed bottom-8 left-8 right-8 flex justify-between items-center w-full max-w-2xl mx-auto">
           <Link href="/film5" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
-          <Link href="/" className="text-white bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded transition">Home</Link>
           <Link href="/film2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
         </div>
       </div>
-      
     </div>
   );
-} 
+}

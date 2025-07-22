@@ -42,7 +42,7 @@ export default function Film2() {
         </div>
       </div>
       {/* Navigation Bar at Bottom */}
-      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
+      <div className="fixed bottom-8 left-8 right-8 flex justify-between items-center w-full max-w-2xl mx-auto">
         <Link href="/film1" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
         <Link href="/film3" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
