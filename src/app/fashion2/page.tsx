@@ -25,6 +25,9 @@ export default function Fashion2() {
         <div className="text-lg md:text-xl text-white font-light">Blooming Showroom (2022)</div>
         <div className="text-lg md:text-xl text-white font-semibold mb-2">Assistant to Manager (Brand Promotion & Buyer Relations)</div>
       </div>
+      <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
+        Home
+      </Link>
       {/* Content: Left image, right text */}
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12">
         {/* Left: Images */}
@@ -95,6 +98,11 @@ export default function Fashion2() {
             </div>
           </div>
         </div>
+      </div>
+      {/* Navigation Bar at Bottom */}
+      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
+        <Link href="/fashion1" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+        <Link href="/fashion3" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
     </div>
   );

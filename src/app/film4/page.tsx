@@ -22,9 +22,14 @@ export default function Film4() {
         <div className="space-y-6">
           <h2 className="text-xl font-light tracking-widest">DESCRIPTION</h2>
           <p className="text-lg leading-relaxed">
-            During my internship at the Jiangsu Center of Xinhua News Agency&apos;s News Information Center, I leveraged my video production expertise to create two high‑quality video ringback tones for Hengshun Vinegar. One of them, titled &quot;Hengshun Promotional Film: Industrial Heritage – The &apos;Living Fossil&apos; of Vinegar Brewing,&quot; highlights the brand&apos;s century‑old history and the cultural essence of its brewing craft, and was provided to Hengshun Vinegar for new‑media brand promotion.
+            During my internship at the Jiangsu Center of Xinhua News Agency&apos;s News Information Center, I leveraged my video production expertise to create two high‑quality video ringback tones for Hengshun Vinegar.
           </p>
         </div>
+      </div>
+      {/* Navigation Bar at Bottom */}
+      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
+        <Link href="/film3" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+        <Link href="/film5" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
     </div>
   );

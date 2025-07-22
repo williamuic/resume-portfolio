@@ -3,7 +3,8 @@ import React from "react";
 import Link from "next/link";
 
 const images = [
-  ...Array.from({ length: 24 }, (_, i) => `/Personal_webpage/FASHION/fashion  Brand  Report/${i + 1}.jpg`)
+  ...Array.from({ length: 13 }, (_, i) => `/Personal_webpage/FASHION/fashion  Brand  Report/${i + 1}.jpg`),
+  ...Array.from({ length: 10 }, (_, i) => `/Personal_webpage/FASHION/fashion  Brand  Report/${i + 15}.jpg`)
 ];
 
 export default function Fashion1() {
@@ -37,6 +38,11 @@ export default function Fashion1() {
             />
           </div>
         ))}
+      </div>
+      {/* Navigation Bar at Bottom */}
+      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
+        <Link href="/fashion4" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+        <Link href="/fashion2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
     </div>
   );

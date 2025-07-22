@@ -36,7 +36,7 @@ export default function Film5() {
         <div className="mb-12">
           <h2 className="text-xl font-bold mb-4">KFC China Home Delivery Initiative (2020)</h2>
           <div className="flex flex-col gap-6 items-center">
-            {kfcImages.map((src, idx) => (
+            {kfcImages.slice(1).map((src, idx) => (
               <img
                 key={src}
                 src={src}
@@ -74,6 +74,11 @@ export default function Film5() {
             ))}
           </div>
         </div>
+      </div>
+      {/* Navigation Bar at Bottom */}
+      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
+        <Link href="/film4" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+        <Link href="/film1" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
     </div>
   );

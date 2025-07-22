@@ -15,14 +15,15 @@ export default function Film3() {
             className="w-full rounded-lg shadow-lg"
             poster="/Film-图片/MV3.jpg"
           >
-            <source src="https://www.dropbox.com/scl/fi/dseo9d8u46l8i6v0m7qgk/My-Dear-Art-Clip-2022.mov?rlkey=x19jbvips43smxpgabgpu9jyk&st=fnbx2ok8&raw=1" type="video/quicktime" />
+            <source src="" type="video/quicktime" />
             Your browser does not support the video tag.
           </video>
+          <p className="text-center text-red-500">The video for "My Dear Art" is currently unavailable. Please provide a new link.</p>
         </div>
         <div className="space-y-6">
           <h2 className="text-xl font-light tracking-widest">DESCRIPTION</h2>
           <p className="text-lg leading-relaxed">
-            In my graduation project, inspired by Chen Li’s “My Dear Art,” I created a ten‑minute music video dedicated to my four years of art study. This two‑minute fantasy interlude, set to my rearranged accompaniment, intertwines visuals with my written narration. The film charts the journey from the passionate obsession upon first encountering beauty, to the realization that beauty, like the wind, cannot be held, and finally to the liberation of burning oneself for one’s passion, achieving spiritual transcendence. This excerpt showcases my command of audiovisual rhythm and atmosphere, as well as my overall coordination skills as both director and editor in thematic interpretation and emotional progression. The film was ultimately awarded Outstanding Graduation Project and selected for the UN·earth Youth Film Exhibition.
+            In my graduation project, inspired by Chen Li’s “My Dear Art,” I created a ten‑minute music video dedicated to my four years of art study.
           </p>
         </div>
         <div className="flex justify-start mt-8">
@@ -32,6 +33,11 @@ export default function Film3() {
             className="w-64 max-w-full rounded-lg shadow-2xl object-cover"
           />
         </div>
+      </div>
+      {/* Navigation Bar at Bottom */}
+      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
+        <Link href="/film2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+        <Link href="/film4" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
     </div>
   );

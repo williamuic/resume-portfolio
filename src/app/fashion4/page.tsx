@@ -24,16 +24,19 @@ export default function Fashion4() {
         <div className="text-lg md:text-xl text-white font-light">Loro Piana - Shenzhen, China (2023)</div>
         <div className="text-lg md:text-xl text-white font-semibold mb-2">Sales Assistant</div>
       </div>
+      <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
+        Home
+      </Link>
       {/* Content: Left image, right text */}
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12">
         {/* Left: Images */}
         <div className="flex flex-col items-center md:w-[520px] w-full flex-shrink-0">
-          <div className="bg-black rounded-xl shadow-2xl mb-4 flex items-center justify-center" style={{ width: "100%", maxWidth: 480, height: 320 }}>
+          <div className="bg-black rounded-xl shadow-2xl mb-4 flex items-center justify-center" style={{ width: "100%", maxWidth: 480, height: 360 }}>
             <img
               src={mainImg}
               alt="China Luxury Pop-up Main"
-              className="object-contain w-full h-full"
-              style={{ maxWidth: 480, maxHeight: 320 }}
+              className="object-cover w-full h-full"
+              style={{ maxWidth: 480, maxHeight: 360 }}
             />
           </div>
           <div className="flex gap-3 w-full justify-center">
@@ -75,6 +78,11 @@ export default function Fashion4() {
             In this pop‑up Sales Assistant role, I not only developed a keen intuition for luxury quality and meticulous attention to detail, but also—through high‑end client engagement, visual merchandising, and rapid multitasking—honed my service instinct, aesthetic insight, adaptability, and premium‑level communication skills, building rich experience and confidence for future high‑end projects.
           </p>
         </div>
+      </div>
+      {/* Navigation Bar at Bottom */}
+      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
+        <Link href="/fashion3" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
+        <Link href="/fashion1" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
     </div>
   );
