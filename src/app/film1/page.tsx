@@ -22,8 +22,14 @@ export default function Film1() {
         <div className="space-y-6">
           <h2 className="text-xl font-light tracking-widest">DESCRIPTION</h2>
           <p className="text-lg leading-relaxed">
-            In 2020, during my junior‑year documentary course, I initiated and directed a film spotlighting the “Nanjing Clay Figurines” intangible heritage: beginning with online and community research to pinpoint clay sculpture as a local cultural gem; overcoming pandemic and resource constraints by liaising twice with Master Zhu Jiandong—an inheritor based at Chongzheng Academy(Nanjing) and advertising entrepreneur; leading multiple team brainstorms to craft interview guides and narrative structure; and directing on‑site shooting, sound recording, and interviews.
+            In 2020, during my junior‑year documentary course, I initiated and directed a film spotlighting the “Nanjing Clay Figurines” intangible heritage: beginning with online and community research to pinpoint clay sculpture as a local cultural gem; overcoming pandemic and resource constraints by liaising twice with Master Zhu Jiandong—an inheritor based at Chongzheng Academy(Nanjing) and advertising entrepreneur; leading multiple team brainstorms to craft interview guides and narrative structure; and directing on‑site shooting, sound recording, and interviews. The finished documentary won First Prize at the National Literary & Artistic Creation Festival and was archived by the Nanjing Intangible Heritage Institution, vividly portraying the artisans&apos; craftsmanship, cultural warmth, and the challenges of passing heritage to younger generations.
           </p>
+          <ul className="list-disc pl-6 space-y-2 text-lg">
+            <li><b>Topic Selection & Feasibility Assessment:</b> Conducted dual‑channel research (online and community) to confirm “Nanjing Clay Figurines” as the documentary subject.</li>
+            <li><b>Resource Integration & Coordination:</b> Secured filming permissions and in‑depth interviews with two heritage masters and institutions.</li>
+            <li><b>Team Leadership & Narrative Development:</b> Facilitated brainstorming sessions, defined team roles, and guided on‑site shooting and editing direction.</li>
+            <li><b>Outcomes & Impact:</b> Awarded First Prize nationally and archived by Chongzheng Academy, elevating the project&apos; s visibility and cultural significance.</li>
+          </ul>
         </div>
         {/* Navigation */}
         <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-12 gap-4">
