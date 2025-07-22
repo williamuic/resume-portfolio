@@ -19,7 +19,7 @@ export default function Film3() {
             <source src="" type="video/quicktime" />
             Your browser does not support the video tag.
           </video>
-          <p className="text-center text-red-500">The video for &quot;My Dear Art&quot; is currently unavailable. Please provide a new link.</p>
+          
         </div>
         <div className="space-y-6">
           <h2 className="text-xl font-light tracking-widest">DESCRIPTION</h2>
