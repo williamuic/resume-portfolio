@@ -14,13 +14,7 @@ export default function Film1() {
           <video
             controls
             className="w-full rounded-lg shadow-lg"
-            <Image
-              src="/Film-图片/Clay Whispers 1.jpg"
-              alt="Video Poster"
-              width={1280}
-              height={720}
-              className="w-full rounded-lg shadow-lg"
-            />
+            poster="/Film-图片/Clay Whispers 1.jpg"
           >
             <source src="https://www.dropbox.com/scl/fi/4lmgatiukmmgvip1i60ye/Nanjing-Clay-Figure-Clay-Whisper-2020.mp4?rlkey=k0gvprtgw316p6c6yuphlu4ih&st=wye87viq&raw=1" type="video/mp4" />
             Your browser does not support the video tag.
