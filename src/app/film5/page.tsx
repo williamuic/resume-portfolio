@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const kfcImages = [
   "/Film-图片/5-1-1.jpg",
@@ -26,9 +27,11 @@ export default function Film5() {
       <div className="max-w-4xl mx-auto pt-20">
         <h1 className="text-3xl font-bold tracking-widest mb-8 text-center">Production Assistant - Commercial Advertising Project</h1>
         <div className="flex justify-center mb-8">
-          <img
+          <Image
             src="/Film-图片/Assistant5.jpg"
             alt="Commercial Production Assistant Cover"
+            width={640}
+            height={640}
             className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
           />
         </div>
@@ -37,10 +40,12 @@ export default function Film5() {
           <h2 className="text-xl font-bold mb-4">KFC China Home Delivery Initiative (2020)</h2>
           <div className="flex flex-col gap-6 items-center">
             {kfcImages.slice(1).map((src, idx) => (
-              <img
+              <Image
                 key={src}
                 src={src}
                 alt={`KFC ${idx + 1}`}
+                width={640}
+                height={640}
                 className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
               />
             ))}
@@ -51,10 +56,12 @@ export default function Film5() {
           <h2 className="text-xl font-bold mb-4">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
           <div className="flex flex-col gap-6 items-center">
             {yiliImages.map((src, idx) => (
-              <img
+              <Image
                 key={src}
                 src={src}
                 alt={`Yili ${idx + 1}`}
+                width={640}
+                height={640}
                 className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
               />
             ))}
@@ -84,4 +91,4 @@ export default function Film5() {
       </div>
     </div>
   );
-} 
+}

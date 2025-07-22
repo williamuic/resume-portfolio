@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function Home() {
   useEffect(() => {
@@ -39,9 +40,11 @@ export default function Home() {
       <div className="fixed inset-0 w-full h-full z-0">
         {/* Home Background */}
         <div className="absolute inset-0 transition-opacity duration-1000" id="home-bg">
-          <img
+          <Image
             src="/hero.JPG"
             alt="Hero Background"
+            width={1920}
+            height={1080}
             className="object-cover w-full h-full"
             style={{ objectPosition: 'center', filter: 'brightness(1.25) contrast(1.1)' }}
           />
@@ -50,9 +53,11 @@ export default function Home() {
         
         {/* About Background */}
         <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="about-bg">
-          <img
+          <Image
             src="/Personal_webpage/BACKGROUND/2ABOUT.jpg"
             alt="About Background"
+            width={1920}
+            height={1080}
             className="object-cover w-full h-full"
             style={{ objectPosition: 'center' }}
           />
@@ -61,9 +66,11 @@ export default function Home() {
         
         {/* Fashion Background */}
         <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="fashion-bg">
-          <img
+          <Image
             src="/Personal_webpage/BACKGROUND/3FASHION.jpg"
             alt="Fashion Background"
+            width={1920}
+            height={1080}
             className="object-cover w-full h-full"
             style={{ objectPosition: 'center' }}
           />
@@ -72,9 +79,11 @@ export default function Home() {
         
         {/* Film Background */}
         <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="film-bg">
-          <img
+          <Image
             src="/Personal_webpage/BACKGROUND/4FILM.jpg"
             alt="Film Background"
+            width={1920}
+            height={1080}
             className="object-cover w-full h-full"
             style={{ objectPosition: 'center' }}
           />
@@ -83,9 +92,11 @@ export default function Home() {
         
         {/* Event Background */}
         <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="event-bg">
-          <img
+          <Image
             src="/Personal_webpage/BACKGROUND/5EVENT.jpg"
             alt="Event Background"
+            width={1920}
+            height={1080}
             className="object-cover w-full h-full"
             style={{ objectPosition: 'center' }}
           />
@@ -94,9 +105,11 @@ export default function Home() {
         
         {/* CV Background */}
         <div className="absolute inset-0 transition-opacity duration-1000 opacity-0" id="cv-bg">
-          <img
+          <Image
             src="/Personal_webpage/BACKGROUND/6CV.webp"
             alt="CV Background"
+            width={1920}
+            height={1080}
             className="object-cover w-full h-full"
             style={{ objectPosition: 'center' }}
           />
@@ -136,9 +149,11 @@ export default function Home() {
             <div className="flex-shrink-0 w-full md:w-[260px] h-[380px] bg-white/10 rounded-xl overflow-hidden flex items-start justify-center ml-16 mt-0 md:mt-32">
               {/* Desktop spacer to push image down */}
               <div className="hidden md:block" style={{ height: '48px' }} />
-              <img
+              <Image
                 src="/IMG_2580.JPG"
                 alt="Eri Zhang Avatar"
+                width={260}
+                height={380}
                 className="object-cover w-full h-full"
                 style={{ minHeight: '100%', minWidth: '100%' }}
               />
@@ -176,9 +191,11 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/fashion3">
                 <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
-                <img
+                <Image
                   src="/Personal_webpage/FASHION/25SS London Fashion Week.jpg"
                   alt="London Fashion Week"
+                  width={288}
+                  height={288}
                   className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
                 </div>
@@ -189,9 +206,11 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/fashion2">
                 <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
-                <img
+                <Image
                   src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
                   alt="Shanghai Fashion Week"
+                  width={288}
+                  height={288}
                   className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
                 </div>
@@ -202,9 +221,11 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/fashion4">
                 <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center aspect-[5/4] overflow-hidden">
-                <img
+                <Image
                   src="/Fashion-Popup store/1.jpg"
                   alt="Luxury Pop-Up Loro Piana"
+                  width={288}
+                  height={288}
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
                 </div>
@@ -215,9 +236,11 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/fashion1">
                 <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
-                <img
+                <Image
                   src="/Personal_webpage/FASHION/1.jpg"
                   alt="Brand Report-DTC Model（2022）"
+                  width={288}
+                  height={288}
                   className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
                 </div>
@@ -249,9 +272,11 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/film2">
                 <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
-                  <img
+                  <Image
                     src="/Film-图片/Ad 2.jpg"
                     alt="Brand Ad Films"
+                    width={300}
+                    height={169}
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
@@ -263,9 +288,11 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/film3">
                 <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
-                  <img
+                  <Image
                     src="/Film-图片/MV3.jpg"
                     alt="Music Videos"
+                    width={300}
+                    height={169}
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
@@ -280,9 +307,11 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/film4">
                 <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
-                  <img
+                  <Image
                     src="/Film-图片/Xinhua 4.png"
                     alt="Hengshun Vinegar × Xinhua News Agency"
+                    width={300}
+                    height={169}
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
@@ -337,4 +366,4 @@ export default function Home() {
             </section>
     </div>
   );
-} 
+}

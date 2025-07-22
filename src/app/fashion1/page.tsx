@@ -12,7 +12,7 @@ export default function Fashion1() {
     <div className="min-h-screen w-full relative flex flex-col items-center justify-center py-8 px-2 md:px-12 overflow-x-hidden">
       {/* Background */}
       <div className="fixed inset-0 -z-10">
-        <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" style={{opacity:0.7}} />
+        <Image src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" width={1920} height={1080} className="w-full h-full object-cover" style={{opacity:0.7}} />
         <div className="absolute inset-0 bg-black/40" />
       </div>
       {/* Navigation Bar at Top */}

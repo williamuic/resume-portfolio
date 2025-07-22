@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const smallImages = [
   "/Fashion- showroom/1.png",
@@ -17,7 +18,7 @@ export default function Fashion2() {
     <div className="min-h-screen w-full relative flex flex-col items-center justify-center py-8 px-2 md:px-12 overflow-x-hidden">
       {/* Background */}
       <div className="fixed inset-0 -z-10">
-        <img src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" className="w-full h-full object-cover" style={{opacity:0.7}} />
+        <Image src="/Personal_webpage/BACKGROUND/3FASHION.jpg" alt="Fashion BG" width={1920} height={1080} className="w-full h-full object-cover" style={{opacity:0.7}} />
         <div className="absolute inset-0 bg-black/40" />
       </div>
       {/* Title and Subtitle */}
@@ -34,9 +35,11 @@ export default function Fashion2() {
         {/* Left: Images */}
         <div className="flex flex-col items-center md:w-[520px] w-full flex-shrink-0">
           <div className="bg-black rounded-xl shadow-2xl mb-4 flex items-center justify-center" style={{ width: "100%", maxWidth: 480, height: 320 }}>
-            <img
+            <Image
               src={mainImg}
               alt="Shanghai Fashion Week Main"
+              width={480}
+              height={320}
               className="object-contain w-full h-full"
               style={{ maxWidth: 480, maxHeight: 320 }}
             />
@@ -109,4 +112,4 @@ export default function Fashion2() {
       </div>
     </div>
   );
-} 
+}

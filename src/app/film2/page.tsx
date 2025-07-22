@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Film2() {
   return (
@@ -42,4 +43,4 @@ export default function Film2() {
       </div>
     </div>
   );
-} 
+}
