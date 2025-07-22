@@ -90,7 +90,7 @@ export default function Fashion3() {
         </div>
       </div>
       {/* Navigation Bar at Bottom */}
-      <div className="fixed bottom-8 left-8 right-8 flex justify-between items-center w-full max-w-2xl mx-auto">
+      <div className="flex justify-between items-center w-full max-w-2xl mx-auto mt-8">
         <Link href="/fashion1" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Previous</Link>
         <Link href="/fashion2" className="text-white bg-pink-700 hover:bg-pink-800 px-4 py-2 rounded transition">Next</Link>
       </div>
