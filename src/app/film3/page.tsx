@@ -18,7 +18,7 @@ export default function Film3() {
             <source src="" type="video/quicktime" />
             Your browser does not support the video tag.
           </video>
-          <p className="text-center text-red-500">The video for "My Dear Art" is currently unavailable. Please provide a new link.</p>
+          <p className="text-center text-red-500">The video for &quot;My Dear Art&quot; is currently unavailable. Please provide a new link.</p>
         </div>
         <div className="space-y-6">
           <h2 className="text-xl font-light tracking-widest">DESCRIPTION</h2>
@@ -27,9 +27,11 @@ export default function Film3() {
           </p>
         </div>
         <div className="flex justify-start mt-8">
-          <img
+          <Image
             src="/Film-图片/MV3-1.jpg"
             alt="Music Videos Still"
+            width={256}
+            height={256}
             className="w-64 max-w-full rounded-lg shadow-2xl object-cover"
           />
         </div>

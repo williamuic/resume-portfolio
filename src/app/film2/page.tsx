@@ -26,9 +26,11 @@ export default function Film2() {
           </p>
         </div>
         <div className="flex justify-start mt-8">
-          <img
+          <Image
             src="/Film-图片/Ad2-1.png"
             alt="Brand Ad Films Still"
+            width={256}
+            height={256}
             className="w-64 max-w-full rounded-lg shadow-2xl object-cover"
           />
         </div>

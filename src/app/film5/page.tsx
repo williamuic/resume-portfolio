@@ -65,10 +65,12 @@ export default function Film5() {
           <h2 className="text-xl font-bold mb-4">China Sports Lottery Promotional Project (2020)</h2>
           <div className="flex flex-col gap-6 items-center">
             {lotteryImages.map((src, idx) => (
-              <img
+              <Image
                 key={src}
                 src={src}
                 alt={`Lottery ${idx + 1}`}
+                width={640}
+                height={640}
                 className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
               />
             ))}

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 const smallImages = [
   "/Fashion- showroom/1.png",
@@ -43,9 +44,11 @@ export default function Fashion2() {
           <div className="flex gap-3 w-full justify-center">
             {smallImages.map((src, idx) => (
               <div key={src} className="bg-black rounded-md flex items-center justify-center" style={{ width: 80, height: 60, flex: "0 0 auto" }}>
-                <img
+                <Image
                   src={src}
                   alt={`shanghai${idx+1}`}
+                  width={80}
+                  height={60}
                   className={`object-contain w-full h-full cursor-pointer border-2 transition-all duration-200 ${mainImg === src ? "border-pink-300" : "border-transparent"}`}
                   onClick={() => setMainImg(src)}
                 />

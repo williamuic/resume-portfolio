@@ -239,11 +239,7 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/film1">
                 <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
-                  <img
-                    src="/Film-图片/Clay Whispers 1.jpg"
-                    alt="Cultural Heritage Documentary"
-                    className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
-                  />
+                  <Image src="/Film-图片/Clay Whispers 1.jpg" alt="Film 1" width={300} height={200} className="w-full h-full object-cover" />
                 </div>
                 <p className="mt-4 text-lg font-bold">Cultural Heritage Documentary</p>
                 <p className="text-base text-white font-light">Nanjing Clay Figure - Clay Whisper（2020）</p>
@@ -298,9 +294,11 @@ export default function Home() {
             <div className="group cursor-pointer">
               <a href="/film5">
                 <div className="bg-black rounded-lg shadow-lg w-full flex items-center justify-center aspect-[16/9] overflow-hidden">
-                  <img
+                  <Image
                     src="/Film-图片/Assistant5.jpg"
                     alt="Commercial Production Assistant"
+                    width={300}
+                    height={169}
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>

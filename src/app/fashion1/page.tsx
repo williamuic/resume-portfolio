@@ -30,9 +30,11 @@ export default function Fashion1() {
       <div className="w-full max-w-2xl mx-auto flex flex-col items-center bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12 gap-8">
         {images.map((src, idx) => (
           <div key={src} className="w-full flex items-center justify-center">
-            <img
+            <Image
               src={src}
               alt={`Brand Report ${idx + 1}`}
+              width={1000}
+              height={1000}
               className="object-contain w-full"
               style={{maxHeight: '1000px'}}
             />
