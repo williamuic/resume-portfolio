@@ -14,7 +14,13 @@ export default function Film4() {
           <video
             controls
             className="w-full rounded-lg shadow-lg"
-            poster="/Film-图片/Xinhua 4.png"
+            <Image
+              src="/Film-图片/Xinhua 4.png"
+              alt="Video Poster"
+              width={1280}
+              height={720}
+              className="w-full rounded-lg shadow-lg"
+            />
           >
             <source src="https://www.dropbox.com/scl/fi/7nltq2wm9cxiwcuv0c6ld/Hengshun-Film-Industrial-Heritage-The-Living-Fossil-of-Vinegar-Brewing-2020.mp4?rlkey=hf3zbe60z6uw331yom4v6ntc1&st=rnxnbay6&raw=1" type="video/mp4" />
             Your browser does not support the video tag.
