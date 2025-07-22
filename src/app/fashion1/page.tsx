@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const images = [
   ...Array.from({ length: 13 }, (_, i) => `/Personal_webpage/FASHION/fashion  Brand  Report/${i + 1}.jpg`),
@@ -48,4 +49,4 @@ export default function Fashion1() {
       </div>
     </div>
   );
-} 
+}
