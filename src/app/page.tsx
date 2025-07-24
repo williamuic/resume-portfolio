@@ -265,7 +265,7 @@ export default function Home() {
                   <Image src="/Film-图片/Clay Whispers 1.jpg" alt="Film 1" width={300} height={200} className="w-full h-full object-cover" />
                 </div>
                 <p className="mt-4 text-lg font-bold">Cultural Heritage Documentary</p>
-                <p className="text-base text-white font-light">Nanjing Clay Figure - Clay Whisper（2020）</p>
+                
               </a>
             </div>
             {/* 2. Brand Ad Films */}
@@ -281,7 +281,7 @@ export default function Home() {
                   />
                 </div>
                 <p className="mt-4 text-lg font-bold">Brand Ad Films</p>
-                <p className="text-base text-white font-light">Blispring– Instantly fresh! Ready for flavor emergencies（2021）</p>
+                
               </a>
             </div>
             {/* 3. Music Videos */}
@@ -297,7 +297,7 @@ export default function Home() {
                   />
                 </div>
                 <p className="mt-4 text-lg font-bold">Music Videos</p>
-                <p className="text-base text-white font-light">My Dear Art（2022）</p>
+                
               </a>
             </div>
           </div>
@@ -316,7 +316,7 @@ export default function Home() {
                   />
                 </div>
                 <p className="mt-4 text-lg font-bold">Hengshun Vinegar × Xinhua News Agency</p>
-                <p className="text-base text-white font-light">Video Ringback Tone Campaign Film (2020)</p>
+                
               </a>
             </div>
             {/* 5. Commercial Production Assistant */}
