@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 const kfcImages = [
   "/Film-图片/5-1-1.jpg",
@@ -21,6 +22,10 @@ const lotteryImages = [
 ];
 
 export default function Film5() {
+  const [currentKfcImage, setCurrentKfcImage] = useState(kfcImages[0]);
+  const [currentYiliImage, setCurrentYiliImage] = useState(yiliImages[0]);
+  const [currentLotteryImage, setCurrentLotteryImage] = useState(lotteryImages[0]);
+
   return (
     <div className="min-h-screen bg-black text-white p-8">
       <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
@@ -34,24 +39,22 @@ export default function Film5() {
           <h2 className="text-xl font-bold mb-4">KFC China Home Delivery Initiative (2020)</h2>
           <div className="relative w-full h-96 rounded-lg shadow-lg overflow-hidden mb-8">
             <Image
-              src={kfcImages[0]}
+              src={currentKfcImage}
               alt="KFC Main Image"
               fill
               className="object-cover"
             />
           </div>
-          <div className="space-y-6 mb-8">
-            <h3 className="text-lg font-light tracking-widest">DESCRIPTION</h3>
-            <p className="text-base leading-relaxed">
-              This section showcases the KFC China Home Delivery Initiative from 2020. It highlights the visual campaigns and promotional materials developed for this project.
-            </p>
-          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {kfcImages.slice(1).map((src, idx) => (
-              <div key={src} className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group">
+            {kfcImages.map((src, idx) => (
+              <div
+                key={src}
+                className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group cursor-pointer"
+                onClick={() => setCurrentKfcImage(src)}
+              >
                 <Image
                   src={src}
-                  alt={`KFC ${idx + 2}`}
+                  alt={`KFC ${idx + 1}`}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -65,24 +68,22 @@ export default function Film5() {
           <h2 className="text-xl font-bold mb-4">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
           <div className="relative w-full h-96 rounded-lg shadow-lg overflow-hidden mb-8">
             <Image
-              src={yiliImages[0]}
+              src={currentYiliImage}
               alt="Yili Main Image"
               fill
               className="object-cover"
             />
           </div>
-          <div className="space-y-6 mb-8">
-            <h3 className="text-lg font-light tracking-widest">DESCRIPTION</h3>
-            <p className="text-base leading-relaxed">
-              This section details the Yili QQ Star collaboration with the United Nations and the Chinese Embassy in Kenya for the Africa Wildlife Conservation Public Benefit Campaign in 2020.
-            </p>
-          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {yiliImages.slice(1).map((src, idx) => (
-              <div key={src} className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group">
+            {yiliImages.map((src, idx) => (
+              <div
+                key={src}
+                className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group cursor-pointer"
+                onClick={() => setCurrentYiliImage(src)}
+              >
                 <Image
                   src={src}
-                  alt={`Yili ${idx + 2}`}
+                  alt={`Yili ${idx + 1}`}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
@@ -96,24 +97,22 @@ export default function Film5() {
           <h2 className="text-xl font-bold mb-4">China Sports Lottery Promotional Project (2020)</h2>
           <div className="relative w-full h-96 rounded-lg shadow-lg overflow-hidden mb-8">
             <Image
-              src={lotteryImages[0]}
+              src={currentLotteryImage}
               alt="Lottery Main Image"
               fill
               className="object-cover"
             />
           </div>
-          <div className="space-y-6 mb-8">
-            <h3 className="text-lg font-light tracking-widest">DESCRIPTION</h3>
-            <p className="text-base leading-relaxed">
-              This section presents the China Sports Lottery Promotional Project from 2020, showcasing the visual assets and campaigns created for this initiative.
-            </p>
-          </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {lotteryImages.slice(1).map((src, idx) => (
-              <div key={src} className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group">
+            {lotteryImages.map((src, idx) => (
+              <div
+                key={src}
+                className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group cursor-pointer"
+                onClick={() => setCurrentLotteryImage(src)}
+              >
                 <Image
                   src={src}
-                  alt={`Lottery ${idx + 2}`}
+                  alt={`Lottery ${idx + 1}`}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
