@@ -5,15 +5,17 @@ const kfcImages = [
   "/Film-图片/5-1-1.jpg",
   "/Film-图片/5-1-2.jpg",
   "/Film-图片/5-1-3.jpg",
+  "/Film-图片/5-1-4.jpg",
 ];
 const yiliImages = [
   "/Film-图片/5-2-1.jpg",
   "/Film-图片/5-2-2.jpg",
   "/Film-图片/5-2-3.jpg",
   "/Film-图片/5-2-4.jpg",
-  "/Film-图片/5-3-2.png",
 ];
 const lotteryImages = [
+  "/Film-图片/5-3-1.jpg",
+  "/Film-图片/5-3-2.png",
   "/Film-图片/5-3-3.jpg",
   "/Film-图片/5-3-4.jpg",
 ];
