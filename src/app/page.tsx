@@ -315,7 +315,7 @@ export default function Home() {
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <p className="mt-4 text-lg font-bold">Hengshun Vinegar × Xinhua News Agency</p>
+                <p className="mt-4 text-lg font-bold">Brand Films × Xinhua News Agency</p>
                 
               </a>
             </div>

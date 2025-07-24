@@ -7,7 +7,7 @@ export default function Film4() {
         Home
       </Link>
       <div className="max-w-4xl mx-auto pt-20">
-        <h1 className="text-3xl font-bold tracking-widest mb-2 text-center">Hengshun Vinegar × Xinhua News Agency</h1>
+        <h1 className="text-3xl font-bold tracking-widest mb-2 text-center">Brand Films × Xinhua News Agency</h1>
         
         
         <div className="mb-12">
