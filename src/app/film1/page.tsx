@@ -8,7 +8,7 @@ export default function Film1() {
       </Link>
       <div className="max-w-4xl mx-auto pt-20">
         <h1 className="text-3xl font-bold tracking-widest mb-2 text-center">Cultural Heritage Documentary</h1>
-        <div className="text-lg text-center text-white font-light mb-8">Nanjing Clay Figure - Clay Whisper（2020）</div>
+        
         <div className="mb-12">
           <video
             controls

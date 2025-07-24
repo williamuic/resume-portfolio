@@ -9,7 +9,7 @@ export default function Film3() {
       </Link>
       <div className="max-w-4xl mx-auto pt-20">
         <h1 className="text-3xl font-bold tracking-widest mb-2 text-center">Music Videos</h1>
-        <div className="text-lg text-center text-white font-light mb-8">My Dear Art（2022）</div>
+        
         <div className="mb-12">
           <video
             controls
