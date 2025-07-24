@@ -40,7 +40,7 @@ export default function Film5() {
                 alt={`KFC ${idx + 1}`}
                 width={640}
                 height={640}
-                className="rounded-lg shadow-lg object-contain bg-black flex-shrink-0"
+                className="rounded-lg shadow-lg object-contain bg-black flex-shrink-0 h-80 w-auto"
               />
             ))}
           </div>
