@@ -30,15 +30,15 @@ export default function Film5() {
         {/* KFC Section */}
         <div className="mb-12">
           <h2 className="text-xl font-bold mb-4">KFC China Home Delivery Initiative (2020)</h2>
-          <div className="flex flex-col gap-6 items-center">
-            {kfcImages.slice(1).map((src, idx) => (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {kfcImages.map((src, idx) => (
               <Image
                 key={src}
                 src={src}
                 alt={`KFC ${idx + 1}`}
                 width={640}
                 height={640}
-                className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
+                className="w-full rounded-lg shadow-lg object-contain bg-black"
               />
             ))}
           </div>
@@ -46,7 +46,7 @@ export default function Film5() {
         {/* Yili Section */}
         <div className="mb-12">
           <h2 className="text-xl font-bold mb-4">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
-          <div className="flex flex-col gap-6 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {yiliImages.map((src, idx) => (
               <Image
                 key={src}
@@ -54,7 +54,7 @@ export default function Film5() {
                 alt={`Yili ${idx + 1}`}
                 width={640}
                 height={640}
-                className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
+                className="w-full rounded-lg shadow-lg object-contain bg-black"
               />
             ))}
           </div>
@@ -62,7 +62,7 @@ export default function Film5() {
         {/* Lottery Section */}
         <div className="mb-12">
           <h2 className="text-xl font-bold mb-4">China Sports Lottery Promotional Project (2020)</h2>
-          <div className="flex flex-col gap-6 items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {lotteryImages.map((src, idx) => (
               <Image
                 key={src}
@@ -70,7 +70,7 @@ export default function Film5() {
                 alt={`Lottery ${idx + 1}`}
                 width={640}
                 height={640}
-                className="w-full max-w-xl rounded-lg shadow-lg object-contain bg-black"
+                className="w-full rounded-lg shadow-lg object-contain bg-black"
               />
             ))}
           </div>
