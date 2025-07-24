@@ -25,16 +25,7 @@ export default function Film5() {
         Home
       </Link>
       <div className="max-w-4xl mx-auto pt-20">
-        <h1 className="text-3xl font-bold tracking-widest mb-8 text-center">Production Assistant - Commercial Advertising Project</h1>
-        <div className="flex justify-center mb-8">
-          <Image
-            src="/Film-图片/Assistant5.jpg"
-            alt="Commercial Production Assistant Cover"
-            width={640}
-            height={640}
-            className="w-full max-w-xl rounded-lg shadow-2xl object-cover"
-          />
-        </div>
+        <h1 className="text-3xl font-bold tracking-widest mb-8 text-center">Production Assistant<br/>Commercial Advertising Project</h1>
         {/* KFC Section */}
         <div className="mb-12">
           <h2 className="text-xl font-bold mb-4">KFC China Home Delivery Initiative (2020)</h2>

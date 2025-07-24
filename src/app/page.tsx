@@ -331,7 +331,8 @@ export default function Home() {
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <p className="mt-4 text-lg font-bold">Commercial Production Assistant</p>
+                <p className="mt-4 text-lg font-bold">Production Assistant</p>
+                <p className="text-base text-white font-light">Commercial Advertising Project</p>
               </a>
             </div>
           </div>
