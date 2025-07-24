@@ -32,48 +32,48 @@ export default function Film5() {
         {/* KFC Section */}
         <div className="mb-12">
           <h2 className="text-xl font-bold mb-4">KFC China Home Delivery Initiative (2020)</h2>
-          <div className="flex overflow-x-auto gap-6 py-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {kfcImages.map((src, idx) => (
-              <Image
-                key={src}
-                src={src}
-                alt={`KFC ${idx + 1}`}
-                width={640}
-                height={640}
-                className="rounded-lg shadow-lg object-contain bg-black flex-shrink-0 h-80 w-auto"
-              />
+              <div key={src} className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group">
+                <Image
+                  src={src}
+                  alt={`KFC ${idx + 1}`}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
             ))}
           </div>
         </div>
         {/* Yili Section */}
         <div className="mb-12">
           <h2 className="text-xl font-bold mb-4">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
-          <div className="flex overflow-x-auto gap-6 py-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {yiliImages.map((src, idx) => (
-              <Image
-                key={src}
-                src={src}
-                alt={`Yili ${idx + 1}`}
-                width={640}
-                height={640}
-                className="rounded-lg shadow-lg object-contain bg-black flex-shrink-0"
-              />
+              <div key={src} className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group">
+                <Image
+                  src={src}
+                  alt={`Yili ${idx + 1}`}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
             ))}
           </div>
         </div>
         {/* Lottery Section */}
         <div className="mb-12">
           <h2 className="text-xl font-bold mb-4">China Sports Lottery Promotional Project (2020)</h2>
-          <div className="flex overflow-x-auto gap-6 py-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {lotteryImages.map((src, idx) => (
-              <Image
-                key={src}
-                src={src}
-                alt={`Lottery ${idx + 1}`}
-                width={640}
-                height={640}
-                className="rounded-lg shadow-lg object-contain bg-black flex-shrink-0"
-              />
+              <div key={src} className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group">
+                <Image
+                  src={src}
+                  alt={`Lottery ${idx + 1}`}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
             ))}
           </div>
         </div>
