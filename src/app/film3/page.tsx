@@ -17,7 +17,7 @@ export default function Film3() {
             className="w-full rounded-lg shadow-lg"
             poster="/Film-图片/MV3.jpg"
           >
-            <source src="https://dl.dropboxusercontent.com/scl/fi/dseo9d8u46l8i6v0m7qgk/My-Dear-Art-Clip-2022.mov?rlkey=x19jbvips43smxpgabgpu9jyk&raw=1" type="video/quicktime" />
+            <source src="https://dl.dropboxusercontent.com/scl/fi/dseo9d8u46l8i6v0m7qgk/My-Dear-Art-Clip-2022.mov?rlkey=x19jbvips43smxpgabgpu9jyk&raw=1" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
