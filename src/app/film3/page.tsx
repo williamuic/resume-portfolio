@@ -23,12 +23,12 @@ export default function Film3() {
         <div className="space-y-6">
           <h2 className="text-xl font-light tracking-widest">DESCRIPTION</h2>
           <p className="text-lg leading-relaxed">
-            In my graduation project, inspired by Chen Li’s “My Dear Art,” I created a ten‑minute music video dedicated to my four years of art study.
+            In my graduation project, inspired by Chen Li’s “My Dear Art,” I created a ten‑minute music video dedicated to my four years of art study. This two‑minute fantasy interlude, set to my rearranged accompaniment, intertwines visuals with my written narration. The film charts the journey from the passionate obsession upon first encountering beauty, to the realization that beauty, like the wind, cannot be held, and finally to the liberation of burning oneself for one’s passion, achieving spiritual transcendence. This excerpt showcases my command of audiovisual rhythm and atmosphere, as well as my overall coordination skills as both director and editor in thematic interpretation and emotional progression. The film was ultimately awarded Outstanding Graduation Project and selected for the UN·earth Youth Film Exhibition.
           </p>
         </div>
         <div className="flex justify-start mt-8">
           <Image
-            src="/Film-图片/MV3-1.jpg"
+            src="/Film-图片/MV3-1新.jpg"
             alt="Music Videos Still"
             width={256}
             height={256}
