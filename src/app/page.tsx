@@ -376,9 +376,26 @@ export default function Home() {
       {/* CV Section */}
       <section id="cv" className="relative min-h-screen flex items-center justify-center text-white">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
-        <div className="max-w-2xl mx-auto text-center z-10 relative">
+        <div className="max-w-3xl mx-auto text-center z-10 relative">
           <h2 className="text-3xl font-light tracking-widest mb-8 mt-16">CV</h2>
-          <p className="text-lg leading-relaxed">This is the CV section. Add your content here.</p>
+          <p className="text-lg leading-relaxed mb-8">Career Journey & Professional Timeline</p>
+          <a href="/cv" className="inline-block bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            View Full Timeline
+          </a>
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
+              <div className="text-2xl font-bold text-pink-400 mb-1">2020-2022</div>
+              <div className="text-sm text-gray-300">Film & Broadcasting</div>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
+              <div className="text-2xl font-bold text-purple-400 mb-1">2023-2024</div>
+              <div className="text-sm text-gray-300">Luxury Brand Management</div>
+            </div>
+            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
+              <div className="text-2xl font-bold text-blue-400 mb-1">2025</div>
+              <div className="text-sm text-gray-300">MA Graduate</div>
+            </div>
+          </div>
         </div>
       </section>
 
