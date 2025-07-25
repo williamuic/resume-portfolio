@@ -104,18 +104,44 @@ export default function Home() {
       const eventBg = document.getElementById('event-bg');
       const cvBg = document.getElementById('cv-bg');
       
-      // Calculate which section is currently in view
-      const currentSection = Math.floor(scrollY / windowHeight);
+      // Get section positions
+      const homeSection = document.getElementById('home');
+      const aboutSection = document.getElementById('about');
+      const fashionSection = document.getElementById('fashion');
+      const filmSection = document.getElementById('film');
+      const eventSection = document.getElementById('event');
+      const cvSection = document.getElementById('cv');
       
       // Reset all backgrounds
       [homeBg, aboutBg, fashionBg, filmBg, eventBg, cvBg].forEach(bg => {
         if (bg) bg.style.opacity = '0';
       });
       
-      // Show the appropriate background
-      const backgrounds = [homeBg, aboutBg, fashionBg, filmBg, eventBg, cvBg];
-      if (backgrounds[currentSection]) {
-        backgrounds[currentSection].style.opacity = '1';
+      // Determine which section is currently in view based on scroll position
+      const sections = [
+        { element: homeSection, bg: homeBg },
+        { element: aboutSection, bg: aboutBg },
+        { element: fashionSection, bg: fashionBg },
+        { element: filmSection, bg: filmBg },
+        { element: eventSection, bg: eventBg },
+        { element: cvSection, bg: cvBg }
+      ];
+      
+      let currentBg = homeBg; // default to home
+      
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section.element) {
+          const sectionTop = section.element.offsetTop;
+          if (scrollY >= sectionTop - windowHeight / 3) {
+            currentBg = section.bg;
+            break;
+          }
+        }
+      }
+      
+      if (currentBg) {
+        currentBg.style.opacity = '1';
       }
     };
 
