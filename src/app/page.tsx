@@ -705,11 +705,11 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-light tracking-widest mb-8">CONTACT</h2>
           
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12">
+          <div className="flex flex-col justify-center items-center gap-8">
             {/* Email */}
             <a 
               href="mailto:Zhangchuqi2023@163.com"
-              className="bg-gradient-to-r from-gray-100 to-gray-200 hover:from-gray-200 hover:to-gray-300 px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-white hover:bg-gray-50 px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200"
             >
               <div className="text-lg font-semibold text-gray-800">Zhangchuqi2023@163.com</div>
             </a>
@@ -719,7 +719,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/eri-chuqi-zhang"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-blue-100 to-blue-200 hover:from-blue-200 hover:to-blue-300 px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              className="bg-white hover:bg-gray-50 px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200"
             >
               <div className="text-lg font-semibold text-gray-800">www.linkedin.com/in/eri-chuqi-zhang</div>
             </a>
