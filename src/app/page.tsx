@@ -343,7 +343,33 @@ export default function Home() {
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
         <div className="max-w-2xl mx-auto text-center z-10 relative">
           <h2 className="text-3xl font-light tracking-widest mb-8 mt-16">EVENT</h2>
-          <p className="text-lg leading-relaxed">This is the Event section. Add your content here.</p>
+          <p className="text-lg leading-relaxed mb-8">Production & Direction Portfolio</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <a href="/event">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                <h3 className="text-xl font-semibold mb-2">On-campus Theater</h3>
+                <p className="text-sm text-gray-300">1,000-seat Theater Leadership (2018–2021)</p>
+              </div>
+            </a>
+            <a href="/event">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                <h3 className="text-xl font-semibold mb-2">Graduation Gala</h3>
+                <p className="text-sm text-gray-300">Oriental Zen-Brand Chief Director (2021)</p>
+              </div>
+            </a>
+            <a href="/event">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                <h3 className="text-xl font-semibold mb-2">STARVOICE</h3>
+                <p className="text-sm text-gray-300">Children's Singing Showcase (2020)</p>
+              </div>
+            </a>
+            <a href="/event">
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                <h3 className="text-xl font-semibold mb-2">Poly Grand Theatre</h3>
+                <p className="text-sm text-gray-300">Nanjing Jinling Performance (2021)</p>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
