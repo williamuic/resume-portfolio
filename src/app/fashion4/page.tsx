@@ -24,6 +24,17 @@ export default function Fashion4() {
       <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
         Home
       </Link>
+      
+      {/* Fashion Navigation Bar */}
+      <nav className="fixed top-20 left-8 z-20 flex flex-col gap-4 items-start">
+        <div className="text-white text-lg font-light tracking-widest">Fashion</div>
+        <div className="flex flex-col gap-2 ml-4">
+          <Link href="/fashion1" className="text-white text-sm font-light tracking-widest hover:underline">1. Brand Report</Link>
+          <Link href="/fashion2" className="text-white text-sm font-light tracking-widest hover:underline">2. Shanghai Fashion Week</Link>
+          <Link href="/fashion3" className="text-white text-sm font-light tracking-widest hover:underline">3. London Fashion Week</Link>
+          <Link href="/fashion4" className="text-white text-sm font-light tracking-widest hover:underline">4. Luxury Pop-Up</Link>
+        </div>
+      </nav>
       {/* Title and Subtitle */}
       <div className="w-full max-w-7xl mx-auto text-center mb-4 md:mb-8">
         <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 mt-4 md:mt-8">Luxury Pop-Up Loro Piana</h1>
@@ -34,25 +45,25 @@ export default function Fashion4() {
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row gap-12 md:gap-20 items-start bg-black/60 rounded-2xl shadow-2xl p-4 md:p-12">
         {/* Left: Images */}
         <div className="flex flex-col items-center md:w-[520px] w-full flex-shrink-0">
-          <div className="bg-black rounded-xl shadow-2xl mb-4 flex items-center justify-center" style={{ width: "100%", maxWidth: 480, height: 360 }}>
+          <div className="bg-black rounded-xl shadow-2xl mb-4 flex items-center justify-center" style={{ width: "100%", maxWidth: 480, height: 480 }}>
             <Image
               src={mainImg}
               alt="China Luxury Pop-up Main"
               width={480}
-              height={360}
-              className="object-cover w-full h-full"
-              style={{ maxWidth: 480, maxHeight: 360 }}
+              height={480}
+              className="object-contain w-full h-full rounded-xl"
+              style={{ maxWidth: 480, maxHeight: 480 }}
             />
           </div>
           <div className="flex gap-3 w-full justify-center">
             {smallImages.map((src, idx) => (
-              <div key={src} className="bg-black rounded-md flex items-center justify-center" style={{ width: 80, height: 60, flex: "0 0 auto" }}>
+              <div key={src} className="bg-black rounded-md flex items-center justify-center" style={{ width: 80, height: 80, flex: "0 0 auto" }}>
                 <Image
                   src={src}
                   alt={`popup${idx+1}`}
                   width={80}
-                  height={60}
-                  className={`object-contain w-full h-full cursor-pointer border-2 transition-all duration-200 ${mainImg === src ? "border-pink-300" : "border-transparent"}`}
+                  height={80}
+                  className={`object-contain w-full h-full cursor-pointer border-2 transition-all duration-200 rounded-md ${mainImg === src ? "border-pink-300" : "border-transparent"}`}
                   onClick={() => setMainImg(src)}
                 />
               </div>

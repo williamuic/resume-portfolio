@@ -20,6 +20,17 @@ export default function Fashion1() {
       <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
         Home
       </Link>
+      
+      {/* Fashion Navigation Bar */}
+      <nav className="fixed top-20 left-8 z-20 flex flex-col gap-4 items-start">
+        <div className="text-white text-lg font-light tracking-widest">Fashion</div>
+        <div className="flex flex-col gap-2 ml-4">
+          <Link href="/fashion1" className="text-white text-sm font-light tracking-widest hover:underline">1. Brand Report</Link>
+          <Link href="/fashion2" className="text-white text-sm font-light tracking-widest hover:underline">2. Shanghai Fashion Week</Link>
+          <Link href="/fashion3" className="text-white text-sm font-light tracking-widest hover:underline">3. London Fashion Week</Link>
+          <Link href="/fashion4" className="text-white text-sm font-light tracking-widest hover:underline">4. Luxury Pop-Up</Link>
+        </div>
+      </nav>
       {/* Title and Subtitle */}
       <div className="w-full max-w-7xl mx-auto text-center mb-4 md:mb-8">
         <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 mt-4 md:mt-8">Brand Report - DTC Model</h1>

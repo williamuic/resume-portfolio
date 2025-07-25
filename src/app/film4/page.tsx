@@ -6,6 +6,18 @@ export default function Film4() {
       <Link href="/" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline">
         Home
       </Link>
+      
+      {/* Film Navigation Bar */}
+      <nav className="fixed top-20 left-8 z-20 flex flex-col gap-4 items-start">
+        <div className="text-white text-lg font-light tracking-widest">Film</div>
+        <div className="flex flex-col gap-2 ml-4">
+          <Link href="/film1" className="text-white text-sm font-light tracking-widest hover:underline">1. Cultural Heritage Documentary</Link>
+          <Link href="/film2" className="text-white text-sm font-light tracking-widest hover:underline">2. Brand Ad Films</Link>
+          <Link href="/film3" className="text-white text-sm font-light tracking-widest hover:underline">3. Music Videos</Link>
+          <Link href="/film4" className="text-white text-sm font-light tracking-widest hover:underline">4. Brand Films × Xinhua News</Link>
+          <Link href="/film5" className="text-white text-sm font-light tracking-widest hover:underline">5. Commercial Production Assistant</Link>
+        </div>
+      </nav>
       <div className="max-w-4xl mx-auto pt-20">
         <h1 className="text-3xl font-bold tracking-widest mb-2 text-center">Brand Films × Xinhua News Agency</h1>
         <div className="text-lg text-center text-white font-light mb-8">Video Ringback Tone Campaign Film (2020)</div>
