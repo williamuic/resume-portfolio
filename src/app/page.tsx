@@ -42,14 +42,54 @@ const jinlingImages = [
 
 export default function Home() {
   const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+
+  // Combine all images for navigation
+  const allEventImages = [
+    ...theaterImages,
+    ...graduationImages,
+    ...starvoiceImages,
+    ...jinlingImages,
+  ];
 
   const handleImageClick = (imageSrc: string) => {
+    const imageIndex = allEventImages.findIndex(img => img === imageSrc);
+    setCurrentImageIndex(imageIndex);
     setEnlargedImage(imageSrc);
   };
 
   const closeEnlargedImage = () => {
     setEnlargedImage(null);
   };
+
+  const goToPreviousImage = () => {
+    const newIndex = currentImageIndex > 0 ? currentImageIndex - 1 : allEventImages.length - 1;
+    setCurrentImageIndex(newIndex);
+    setEnlargedImage(allEventImages[newIndex]);
+  };
+
+  const goToNextImage = () => {
+    const newIndex = currentImageIndex < allEventImages.length - 1 ? currentImageIndex + 1 : 0;
+    setCurrentImageIndex(newIndex);
+    setEnlargedImage(allEventImages[newIndex]);
+  };
+
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (enlargedImage) {
+        if (e.key === 'ArrowLeft') {
+          goToPreviousImage();
+        } else if (e.key === 'ArrowRight') {
+          goToNextImage();
+        } else if (e.key === 'Escape') {
+          closeEnlargedImage();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [enlargedImage, currentImageIndex]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -546,7 +586,7 @@ export default function Home() {
           className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
           onClick={closeEnlargedImage}
         >
-          <div className="relative max-w-5xl max-h-full">
+          <div className="relative max-w-5xl max-h-full" onClick={(e) => e.stopPropagation()}>
             <Image
               src={enlargedImage}
               alt="Enlarged Event Image"
@@ -554,12 +594,35 @@ export default function Home() {
               height={900}
               className="object-contain w-full h-full rounded-lg"
             />
+            
+            {/* Close Button */}
             <button
               onClick={closeEnlargedImage}
-              className="absolute top-4 right-4 text-white bg-black/50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/70 transition-colors duration-300"
+              className="absolute top-4 right-4 text-white bg-black/50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/70 transition-colors duration-300 text-xl"
             >
               ×
             </button>
+            
+            {/* Previous Button */}
+            <button
+              onClick={goToPreviousImage}
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white bg-black/50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-black/70 transition-colors duration-300 text-xl"
+            >
+              ‹
+            </button>
+            
+            {/* Next Button */}
+            <button
+              onClick={goToNextImage}
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white bg-black/50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-black/70 transition-colors duration-300 text-xl"
+            >
+              ›
+            </button>
+            
+            {/* Image Counter */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black/50 px-4 py-2 rounded-full text-sm">
+              {currentImageIndex + 1} / {allEventImages.length}
+            </div>
           </div>
         </div>
       )}
