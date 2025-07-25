@@ -22,7 +22,7 @@ export default function Fashion1() {
       </Link>
       {/* Title and Subtitle */}
       <div className="w-full max-w-7xl mx-auto text-center mb-4 md:mb-8">
-        <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 mt-4 md:mt-8">Brand Report-DTC Model</h1>
+        <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 mt-4 md:mt-8">Brand Report - DTC Model</h1>
         <div className="text-lg md:text-xl text-white font-light">Beauty Brand- Perfect Diary (2022)</div>
       </div>
       {/* Vertical Scroll Gallery */}

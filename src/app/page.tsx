@@ -238,13 +238,13 @@ export default function Home() {
                 <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center aspect-[4/3] overflow-hidden">
                 <Image
                   src="/Personal_webpage/FASHION/1.jpg"
-                  alt="Brand Report-DTC Model（2022）"
+                  alt="Brand Report - DTC Model（2022）"
                   width={288}
                   height={216}
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
                 </div>
-                <p className="mt-4 text-lg font-light">Brand Report-DTC Model（2022）</p>
+                <p className="mt-4 text-lg font-light">Brand Report - DTC Model（2022）</p>
               </a>
             </div>
           </div>
