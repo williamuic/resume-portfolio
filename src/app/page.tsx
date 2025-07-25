@@ -576,12 +576,32 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-pink-500 rounded-full border-4 border-white shadow-lg"></div>
-                <div className="w-1/2 pl-8"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="flex justify-center">
+                    <Image
+                      src="/CV/1 Clay Whispers.jpg"
+                      alt="Clay Whispers 2020"
+                      width={300}
+                      height={400}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* 2021 */}
               <div className="relative flex items-center">
-                <div className="w-1/2 pr-8"></div>
+                <div className="w-1/2 pr-8">
+                  <div className="flex justify-center">
+                    <Image
+                      src="/CV/2 晚会.jpg"
+                      alt="Event 2021"
+                      width={300}
+                      height={400}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-500 rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-1/2 pl-8">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-purple-300/30">
@@ -602,12 +622,32 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg"></div>
-                <div className="w-1/2 pl-8"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="flex justify-center">
+                    <Image
+                      src="/CV/3 毕设.jpg"
+                      alt="Graduation Project 2022"
+                      width={300}
+                      height={400}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* 2023 */}
               <div className="relative flex items-center">
-                <div className="w-1/2 pr-8"></div>
+                <div className="w-1/2 pr-8">
+                  <div className="flex justify-center">
+                    <Image
+                      src="/CV/4 Loro-Piana-Labor.jpeg"
+                      alt="Loro Piana Work 2023"
+                      width={300}
+                      height={400}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-indigo-500 rounded-full border-4 border-white shadow-lg"></div>
                 <div className="w-1/2 pl-8">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-indigo-300/30">
@@ -628,7 +668,17 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cyan-500 rounded-full border-4 border-white shadow-lg"></div>
-                <div className="w-1/2 pl-8"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="flex justify-center">
+                    <Image
+                      src="/CV/5 LFW.jpg"
+                      alt="London Fashion Week 2024"
+                      width={300}
+                      height={400}
+                      className="rounded-lg shadow-lg object-cover"
+                    />
+                  </div>
+                </div>
               </div>
 
               {/* 2025 */}
