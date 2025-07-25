@@ -109,7 +109,7 @@ export default function Event() {
 
         {/* STARVOICE Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-4 text-left">STARVOICE –Children's Singing Showcase (2020)</h2>
+          <h2 className="text-2xl font-bold mb-4 text-left">STARVOICE –Children&apos;s Singing Showcase (2020)</h2>
           <p className="text-left text-gray-300 mb-6">Video Console Operator</p>
           <div className="grid grid-cols-4 md:grid-cols-5 gap-3 mb-12">
             {starvoiceImages.map((src, idx) => (
