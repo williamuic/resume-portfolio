@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback, useMemo } from "react";
 import Image from "next/image";
 
 // Event images data
@@ -45,12 +45,12 @@ export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
 
   // Combine all images for navigation
-  const allEventImages = [
+  const allEventImages = useMemo(() => [
     ...theaterImages,
     ...graduationImages,
     ...starvoiceImages,
     ...jinlingImages,
-  ];
+  ], []);
 
   const handleImageClick = (imageSrc: string) => {
     const imageIndex = allEventImages.findIndex(img => img === imageSrc);
@@ -58,21 +58,21 @@ export default function Home() {
     setEnlargedImage(imageSrc);
   };
 
-  const closeEnlargedImage = () => {
+  const closeEnlargedImage = useCallback(() => {
     setEnlargedImage(null);
-  };
+  }, []);
 
-  const goToPreviousImage = () => {
+  const goToPreviousImage = useCallback(() => {
     const newIndex = currentImageIndex > 0 ? currentImageIndex - 1 : allEventImages.length - 1;
     setCurrentImageIndex(newIndex);
     setEnlargedImage(allEventImages[newIndex]);
-  };
+  }, [currentImageIndex, allEventImages]);
 
-  const goToNextImage = () => {
+  const goToNextImage = useCallback(() => {
     const newIndex = currentImageIndex < allEventImages.length - 1 ? currentImageIndex + 1 : 0;
     setCurrentImageIndex(newIndex);
     setEnlargedImage(allEventImages[newIndex]);
-  };
+  }, [currentImageIndex, allEventImages]);
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
@@ -572,7 +572,7 @@ export default function Home() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-pink-300/30">
                     <div className="text-2xl font-bold text-pink-400 mb-2">2020</div>
                     <h3 className="text-xl font-semibold mb-3">Film Practice & Collaboration</h3>
-                    <p className="text-gray-300 leading-relaxed">• Collaborated with classmates skilled in post-production to create high-quality short films such as &lt;Clay Whispers&gt; during my junior year.<br/>• Clay Whispers won First Prize in the National Literary and Artistic Creation Festival (04/2021).<br/><br/><strong>Internship at Xinhua News Agency</strong><br/>• Joined the Jiangsu Center of Xinhua News Agency's News Information Center as a new media content editor (08/2020–01/2021), producing video content and digital media materials.</p>
+                    <p className="text-gray-300 leading-relaxed">• Collaborated with classmates skilled in post-production to create high-quality short films such as &lt;Clay Whispers&gt; during my junior year.<br/>• Clay Whispers won First Prize in the National Literary and Artistic Creation Festival (04/2021).<br/><br/><strong>Internship at Xinhua News Agency</strong><br/>• Joined the Jiangsu Center of Xinhua News Agency&apos;s News Information Center as a new media content editor (08/2020–01/2021), producing video content and digital media materials.</p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-pink-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -613,7 +613,7 @@ export default function Home() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-indigo-300/30">
                     <div className="text-2xl font-bold text-indigo-400 mb-2">2023</div>
                     <h3 className="text-xl font-semibold mb-3">First Steps into the Luxury World</h3>
-                    <p className="text-gray-300 leading-relaxed">• Worked from May to July at Loro Piana's Summer Resort Pop-up Store in Shenzhen, gaining first-hand experience in luxury retail, HNW client service, and visual merchandising.<br/>• Enrolled in the MA Luxury Brand Management program at Goldsmiths, University of London (09/2023).</p>
+                    <p className="text-gray-300 leading-relaxed">• Worked from May to July at Loro Piana&apos;s Summer Resort Pop-up Store in Shenzhen, gaining first-hand experience in luxury retail, HNW client service, and visual merchandising.<br/>• Enrolled in the MA Luxury Brand Management program at Goldsmiths, University of London (09/2023).</p>
                   </div>
                 </div>
               </div>
@@ -624,7 +624,7 @@ export default function Home() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-cyan-300/30">
                     <div className="text-2xl font-bold text-cyan-400 mb-2">2024</div>
                     <h3 className="text-xl font-semibold mb-3">Brand Knowledge & Practical Growth</h3>
-                    <p className="text-gray-300 leading-relaxed">• Deepened expertise in marketing, digital communication, project management, and retail technologies throughout the year.<br/>• Completed a dissertation titled &quot;Chinese Consumers' Attitudes Toward Luxury Pop-up Stores and Key Purchase Drivers.&quot;<br/>• Participated in 25SS London Fashion Week runway internship with Helen Anthony, where I practiced styling, improved cross-cultural communication, and contributed backstage photography to enrich the brand's visual archive.</p>
+                    <p className="text-gray-300 leading-relaxed">• Deepened expertise in marketing, digital communication, project management, and retail technologies throughout the year.<br/>• Completed a dissertation titled &quot;Chinese Consumers&apos; Attitudes Toward Luxury Pop-up Stores and Key Purchase Drivers.&quot;<br/>• Participated in 25SS London Fashion Week runway internship with Helen Anthony, where I practiced styling, improved cross-cultural communication, and contributed backstage photography to enrich the brand&apos;s visual archive.</p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cyan-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -638,7 +638,7 @@ export default function Home() {
                 <div className="w-1/2 pl-8">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-emerald-300/30">
                     <div className="text-2xl font-bold text-emerald-400 mb-2">2025</div>
-                    <h3 className="text-xl font-semibold mb-3">Master's Graduation & Ongoing Development</h3>
+                    <h3 className="text-xl font-semibold mb-3">Master&apos;s Graduation & Ongoing Development</h3>
                     <p className="text-gray-300 leading-relaxed">• Graduated with an MA in Luxury Brand Management from Goldsmiths, University of London (09/2023–01/2025).</p>
                   </div>
                 </div>
