@@ -43,8 +43,8 @@ export default function Film5() {
         <div className="text-base text-center text-white font-light mb-8">Production Assistant</div>
         {/* KFC Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-center">KFC China Home Delivery Initiative (2020)</h2>
-          <div className="relative w-full aspect-[16/9] max-h-[500px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
+          <h2 className="text-2xl font-bold mb-6 text-left">KFC China Home Delivery Initiative (2020)</h2>
+          <div className="relative w-full aspect-[16/9] max-h-[400px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
             <Image
               src={currentKfcImage}
               alt="KFC Main Image"
@@ -77,8 +77,8 @@ export default function Film5() {
 
         {/* Yili Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-center">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
-          <div className="relative w-full aspect-[16/9] max-h-[500px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
+          <h2 className="text-2xl font-bold mb-6 text-left">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
+          <div className="relative w-full aspect-[16/9] max-h-[400px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
             <Image
               src={currentYiliImage}
               alt="Yili Main Image"
@@ -111,8 +111,8 @@ export default function Film5() {
 
         {/* Lottery Section */}
         <div className="mb-16">
-          <h2 className="text-2xl font-bold mb-6 text-center">China Sports Lottery Promotional Project (2020)</h2>
-          <div className="relative w-full aspect-[16/9] max-h-[500px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
+          <h2 className="text-2xl font-bold mb-6 text-left">China Sports Lottery Promotional Project (2020)</h2>
+          <div className="relative w-full aspect-[16/9] max-h-[400px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
             <Image
               src={currentLotteryImage}
               alt="Lottery Main Image"
