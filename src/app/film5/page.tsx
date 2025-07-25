@@ -37,87 +37,102 @@ export default function Film5() {
         <h1 className="text-3xl font-bold tracking-widest mb-2 text-center">Commercial Advertising Project</h1>
         <div className="text-base text-center text-white font-light mb-8">Production Assistant</div>
         {/* KFC Section */}
-        <div className="mb-12">
-          <h2 className="text-xl font-bold mb-4">KFC China Home Delivery Initiative (2020)</h2>
-          <div className="relative w-full h-96 rounded-lg shadow-lg overflow-hidden mb-8">
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold mb-6 text-center">KFC China Home Delivery Initiative (2020)</h2>
+          <div className="relative w-full aspect-[16/9] max-h-[500px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
             <Image
               src={currentKfcImage}
               alt="KFC Main Image"
               fill
-              className="object-cover"
+              className="object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {kfcImages.map((src, idx) => (
               <div
                 key={src}
-                className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group cursor-pointer"
+                className={`relative aspect-[4/3] rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 ${
+                  currentKfcImage === src 
+                    ? 'ring-2 ring-pink-500 shadow-lg shadow-pink-500/20' 
+                    : 'shadow-md hover:shadow-xl hover:shadow-white/10'
+                }`}
                 onClick={() => setCurrentKfcImage(src)}
               >
                 <Image
                   src={src}
                   alt={`KFC ${idx + 1}`}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
               </div>
             ))}
           </div>
         </div>
 
         {/* Yili Section */}
-        <div className="mb-12">
-          <h2 className="text-xl font-bold mb-4">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
-          <div className="relative w-full h-96 rounded-lg shadow-lg overflow-hidden mb-8">
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold mb-6 text-center">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
+          <div className="relative w-full aspect-[16/9] max-h-[500px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
             <Image
               src={currentYiliImage}
               alt="Yili Main Image"
               fill
-              className="object-cover"
+              className="object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {yiliImages.map((src, idx) => (
               <div
                 key={src}
-                className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group cursor-pointer"
+                className={`relative aspect-[4/3] rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 ${
+                  currentYiliImage === src 
+                    ? 'ring-2 ring-pink-500 shadow-lg shadow-pink-500/20' 
+                    : 'shadow-md hover:shadow-xl hover:shadow-white/10'
+                }`}
                 onClick={() => setCurrentYiliImage(src)}
               >
                 <Image
                   src={src}
                   alt={`Yili ${idx + 1}`}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
               </div>
             ))}
           </div>
         </div>
 
         {/* Lottery Section */}
-        <div className="mb-12">
-          <h2 className="text-xl font-bold mb-4">China Sports Lottery Promotional Project (2020)</h2>
-          <div className="relative w-full h-96 rounded-lg shadow-lg overflow-hidden mb-8">
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold mb-6 text-center">China Sports Lottery Promotional Project (2020)</h2>
+          <div className="relative w-full aspect-[16/9] max-h-[500px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
             <Image
               src={currentLotteryImage}
               alt="Lottery Main Image"
               fill
-              className="object-cover"
+              className="object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {lotteryImages.map((src, idx) => (
               <div
                 key={src}
-                className="relative w-full h-64 rounded-lg shadow-lg overflow-hidden group cursor-pointer"
+                className={`relative aspect-[4/3] rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 ${
+                  currentLotteryImage === src 
+                    ? 'ring-2 ring-pink-500 shadow-lg shadow-pink-500/20' 
+                    : 'shadow-md hover:shadow-xl hover:shadow-white/10'
+                }`}
                 onClick={() => setCurrentLotteryImage(src)}
               >
                 <Image
                   src={src}
                   alt={`Lottery ${idx + 1}`}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-300" />
               </div>
             ))}
           </div>
