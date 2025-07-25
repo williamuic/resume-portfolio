@@ -553,26 +553,97 @@ export default function Home() {
       </section>
 
       {/* CV Section */}
-      <section id="cv" className="relative min-h-screen flex items-center justify-center text-white">
+      <section id="cv" className="relative min-h-screen flex items-center justify-center text-white py-16">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
-        <div className="max-w-3xl mx-auto text-center z-10 relative">
-          <h2 className="text-3xl font-light tracking-widest mb-8 mt-16">CV</h2>
-          <p className="text-lg leading-relaxed mb-8">Career Journey & Professional Timeline</p>
-          <a href="/cv" className="inline-block bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-            View Full Timeline
-          </a>
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-              <div className="text-2xl font-bold text-pink-400 mb-1">2020-2022</div>
-              <div className="text-sm text-gray-300">Film & Broadcasting</div>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-              <div className="text-2xl font-bold text-purple-400 mb-1">2023-2024</div>
-              <div className="text-sm text-gray-300">Luxury Brand Management</div>
-            </div>
-            <div className="bg-white/5 backdrop-blur-sm rounded-lg p-4 border border-gray-700">
-              <div className="text-2xl font-bold text-blue-400 mb-1">2025</div>
-              <div className="text-sm text-gray-300">MA Graduate</div>
+        <div className="max-w-4xl mx-auto z-10 relative px-8">
+          <h2 className="text-4xl font-bold tracking-widest mb-16 text-center">CV</h2>
+          
+          {/* Vertical Timeline */}
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-pink-500 via-purple-500 to-blue-500 h-full"></div>
+            
+            {/* Timeline Items */}
+            <div className="space-y-16">
+              
+              {/* 2020 */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-pink-300/30">
+                    <div className="text-2xl font-bold text-pink-400 mb-2">2020</div>
+                    <h3 className="text-xl font-semibold mb-3">Communication University of China, Nanjing</h3>
+                    <p className="text-gray-300 leading-relaxed">Started BA in Film Directing with minor in Event Planning. Directed award-winning documentary "Clay Whispers" about Nanjing Clay Figurines intangible heritage. Led multiple cultural events as Student Union Arts Division President.</p>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-pink-500 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-1/2 pl-8"></div>
+              </div>
+
+              {/* 2021 */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-purple-500 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-purple-300/30">
+                    <div className="text-2xl font-bold text-purple-400 mb-2">2021</div>
+                    <h3 className="text-xl font-semibold mb-3">Chief Director & Brand Film Production</h3>
+                    <p className="text-gray-300 leading-relaxed">Served as Chief Director for Oriental Zen-Brand Graduation Gala. Produced brand films for major clients including KFC China, Yili QQ Star, and China Sports Lottery. Directed performance at Nanjing Poly Grand Theatre.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2022 */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-blue-300/30">
+                    <div className="text-2xl font-bold text-blue-400 mb-2">2022</div>
+                    <h3 className="text-xl font-semibold mb-3">BA Graduate & Industry Experience</h3>
+                    <p className="text-gray-300 leading-relaxed">Graduated with BA in Film Directing. Completed Brand Report on DTC Model for Perfect Diary. Gained hands-on experience in luxury retail at Shanghai Fashion Week Trade Show. Won multiple national film competition awards.</p>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-1/2 pl-8"></div>
+              </div>
+
+              {/* 2023 */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-indigo-500 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-indigo-300/30">
+                    <div className="text-2xl font-bold text-indigo-400 mb-2">2023</div>
+                    <h3 className="text-xl font-semibold mb-3">Goldsmiths, University of London</h3>
+                    <p className="text-gray-300 leading-relaxed">Began MA in Luxury Brand Management at Goldsmiths. Worked as Sales Assistant at Loro Piana Pop-up in Shenzhen, gaining first-hand luxury retail experience. Participated in London Fashion Week Runway events.</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* 2024 */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8 text-right">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-cyan-300/30">
+                    <div className="text-2xl font-bold text-cyan-400 mb-2">2024</div>
+                    <h3 className="text-xl font-semibold mb-3">MA Thesis & Luxury Insights</h3>
+                    <p className="text-gray-300 leading-relaxed">Conducted MA thesis research on "Social Media Word-of-Mouth Effect of Luxury Pop-Ups" revealing that 60%+ purchase decisions are driven by social buzz. Validated "Online Hype + Offline Experience + UGC Engagement" framework for Gen Z luxury consumers.</p>
+                  </div>
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cyan-500 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-1/2 pl-8"></div>
+              </div>
+
+              {/* 2025 */}
+              <div className="relative flex items-center">
+                <div className="w-1/2 pr-8"></div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-emerald-500 rounded-full border-4 border-white shadow-lg"></div>
+                <div className="w-1/2 pl-8">
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-emerald-300/30">
+                    <div className="text-2xl font-bold text-emerald-400 mb-2">2025</div>
+                    <h3 className="text-xl font-semibold mb-3">MA Graduate & Career Launch</h3>
+                    <p className="text-gray-300 leading-relaxed">Graduated with Merit from MA in Luxury Brand Management. Ready to join luxury or fashion brand teams in film production, brand marketing, creative planning, or communications management to craft the next great brand stories.</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
