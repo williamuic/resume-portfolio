@@ -571,8 +571,8 @@ export default function Home() {
                 <div className="w-1/2 pr-8 text-right">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-pink-300/30">
                     <div className="text-2xl font-bold text-pink-400 mb-2">2020</div>
-                    <h3 className="text-xl font-semibold mb-3">Communication University of China, Nanjing</h3>
-                    <p className="text-gray-300 leading-relaxed">Started BA in Film Directing with minor in Event Planning. Directed award-winning documentary &quot;Clay Whispers&quot; about Nanjing Clay Figurines intangible heritage. Led multiple cultural events as Student Union Arts Division President.</p>
+                    <h3 className="text-xl font-semibold mb-3">Film Practice & Collaboration</h3>
+                    <p className="text-gray-300 leading-relaxed">• Collaborated with classmates skilled in post-production to create high-quality short films such as &lt;Clay Whispers&gt; during my junior year.<br/>• Clay Whispers won First Prize in the National Literary and Artistic Creation Festival (04/2021).<br/><br/><strong>Internship at Xinhua News Agency</strong><br/>• Joined the Jiangsu Center of Xinhua News Agency's News Information Center as a new media content editor (08/2020–01/2021), producing video content and digital media materials.</p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-pink-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -586,8 +586,8 @@ export default function Home() {
                 <div className="w-1/2 pl-8">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-purple-300/30">
                     <div className="text-2xl font-bold text-purple-400 mb-2">2021</div>
-                    <h3 className="text-xl font-semibold mb-3">Chief Director & Brand Film Production</h3>
-                    <p className="text-gray-300 leading-relaxed">Served as Chief Director for Oriental Zen-Brand Graduation Gala. Produced brand films for major clients including KFC China, Yili QQ Star, and China Sports Lottery. Directed performance at Nanjing Poly Grand Theatre.</p>
+                    <h3 className="text-xl font-semibold mb-3">Directing – Events – Commercial Shows</h3>
+                    <p className="text-gray-300 leading-relaxed">• Directed a commercial for Blispring toothpaste, winning the Bronze Award at the College Awards, China University Students Advertising Festival (08/2021).<br/>• While completing my degree, I served as President of the Student Union Arts Division, leading multiple campus galas and cultural events—greatly enhancing my project planning and team coordination skills.<br/>• In December, independently directed the Oriental Zen Graduation Gala, a commercial brand event that received highly positive feedback.</p>
                   </div>
                 </div>
               </div>
@@ -597,8 +597,8 @@ export default function Home() {
                 <div className="w-1/2 pr-8 text-right">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-blue-300/30">
                     <div className="text-2xl font-bold text-blue-400 mb-2">2022</div>
-                    <h3 className="text-xl font-semibold mb-3">BA Graduate & Industry Experience</h3>
-                    <p className="text-gray-300 leading-relaxed">Graduated with BA in Film Directing. Completed Brand Report on DTC Model for Perfect Diary. Gained hands-on experience in luxury retail at Shanghai Fashion Week Trade Show. Won multiple national film competition awards.</p>
+                    <h3 className="text-xl font-semibold mb-3">From Film to Fashion Management</h3>
+                    <p className="text-gray-300 leading-relaxed">• Directed and edited my graduation film &lt;My Dear Art&gt;, a ten-minute visual tribute to artistic passion.<br/>• Graduated with a BA in Broadcast and Television Editing and Directing, Communication University of China, Nanjing (09/2018–06/2022).<br/>  • Awarded Outstanding Graduate of CUCN<br/>  • Received Outstanding Graduation Design from the School of Broadcast and Television<br/>• Inspired by my passion for aesthetics, visual, and brand storytelling, I transitioned into the field of fashion.<br/>• Participated in the 23SS Shanghai Fashion Week Trade Show at Blooming Showroom (09/2022).<br/>• Completed a research report on DTC strategies in domestic Chinese beauty brands, marking my entry into business and branding studies.</p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -612,8 +612,8 @@ export default function Home() {
                 <div className="w-1/2 pl-8">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-indigo-300/30">
                     <div className="text-2xl font-bold text-indigo-400 mb-2">2023</div>
-                    <h3 className="text-xl font-semibold mb-3">Goldsmiths, University of London</h3>
-                    <p className="text-gray-300 leading-relaxed">Began MA in Luxury Brand Management at Goldsmiths. Worked as Sales Assistant at Loro Piana Pop-up in Shenzhen, gaining first-hand luxury retail experience. Participated in London Fashion Week Runway events.</p>
+                    <h3 className="text-xl font-semibold mb-3">First Steps into the Luxury World</h3>
+                    <p className="text-gray-300 leading-relaxed">• Worked from May to July at Loro Piana's Summer Resort Pop-up Store in Shenzhen, gaining first-hand experience in luxury retail, HNW client service, and visual merchandising.<br/>• Enrolled in the MA Luxury Brand Management program at Goldsmiths, University of London (09/2023).</p>
                   </div>
                 </div>
               </div>
@@ -623,8 +623,8 @@ export default function Home() {
                 <div className="w-1/2 pr-8 text-right">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-cyan-300/30">
                     <div className="text-2xl font-bold text-cyan-400 mb-2">2024</div>
-                    <h3 className="text-xl font-semibold mb-3">MA Thesis & Luxury Insights</h3>
-                    <p className="text-gray-300 leading-relaxed">Conducted MA thesis research on &quot;Social Media Word-of-Mouth Effect of Luxury Pop-Ups&quot; revealing that 60%+ purchase decisions are driven by social buzz. Validated &quot;Online Hype + Offline Experience + UGC Engagement&quot; framework for Gen Z luxury consumers.</p>
+                    <h3 className="text-xl font-semibold mb-3">Brand Knowledge & Practical Growth</h3>
+                    <p className="text-gray-300 leading-relaxed">• Deepened expertise in marketing, digital communication, project management, and retail technologies throughout the year.<br/>• Completed a dissertation titled &quot;Chinese Consumers' Attitudes Toward Luxury Pop-up Stores and Key Purchase Drivers.&quot;<br/>• Participated in 25SS London Fashion Week runway internship with Helen Anthony, where I practiced styling, improved cross-cultural communication, and contributed backstage photography to enrich the brand's visual archive.</p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cyan-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -638,8 +638,8 @@ export default function Home() {
                 <div className="w-1/2 pl-8">
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-emerald-300/30">
                     <div className="text-2xl font-bold text-emerald-400 mb-2">2025</div>
-                    <h3 className="text-xl font-semibold mb-3">MA Graduate & Career Launch</h3>
-                    <p className="text-gray-300 leading-relaxed">Graduated with Merit from MA in Luxury Brand Management. Ready to join luxury or fashion brand teams in film production, brand marketing, creative planning, or communications management to craft the next great brand stories.</p>
+                    <h3 className="text-xl font-semibold mb-3">Master's Graduation & Ongoing Development</h3>
+                    <p className="text-gray-300 leading-relaxed">• Graduated with an MA in Luxury Brand Management from Goldsmiths, University of London (09/2023–01/2025).</p>
                   </div>
                 </div>
               </div>
