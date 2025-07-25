@@ -44,13 +44,16 @@ export default function Film5() {
         {/* KFC Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold mb-6 text-left">KFC China Home Delivery Initiative (2020)</h2>
-          <div className="relative w-full aspect-[16/9] max-h-[400px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
-            <Image
-              src={currentKfcImage}
-              alt="KFC Main Image"
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
-            />
+          <div className="flex justify-center mb-8">
+            <div className="relative max-w-[600px] w-full rounded-xl shadow-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-black">
+              <Image
+                src={currentKfcImage}
+                alt="KFC Main Image"
+                width={600}
+                height={400}
+                className="object-contain hover:scale-105 transition-transform duration-500 w-full h-auto"
+              />
+            </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {kfcImages.map((src, idx) => (
@@ -78,13 +81,16 @@ export default function Film5() {
         {/* Yili Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold mb-6 text-left">Yili QQ Star × United Nations × Chinese Embassy in Kenya Joint Initiative: Africa Wildlife Conservation Public Benefit Campaign (2020)</h2>
-          <div className="relative w-full aspect-[16/9] max-h-[400px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
-            <Image
-              src={currentYiliImage}
-              alt="Yili Main Image"
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
-            />
+          <div className="flex justify-center mb-8">
+            <div className="relative max-w-[600px] w-full rounded-xl shadow-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-black">
+              <Image
+                src={currentYiliImage}
+                alt="Yili Main Image"
+                width={600}
+                height={400}
+                className="object-contain hover:scale-105 transition-transform duration-500 w-full h-auto"
+              />
+            </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {yiliImages.map((src, idx) => (
@@ -112,13 +118,16 @@ export default function Film5() {
         {/* Lottery Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-bold mb-6 text-left">China Sports Lottery Promotional Project (2020)</h2>
-          <div className="relative w-full aspect-[16/9] max-h-[400px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
-            <Image
-              src={currentLotteryImage}
-              alt="Lottery Main Image"
-              fill
-              className="object-cover hover:scale-105 transition-transform duration-500"
-            />
+          <div className="flex justify-center mb-8">
+            <div className="relative max-w-[600px] w-full rounded-xl shadow-2xl overflow-hidden bg-gradient-to-br from-gray-900 to-black">
+              <Image
+                src={currentLotteryImage}
+                alt="Lottery Main Image"
+                width={600}
+                height={400}
+                className="object-contain hover:scale-105 transition-transform duration-500 w-full h-auto"
+              />
+            </div>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             {lotteryImages.map((src, idx) => (
