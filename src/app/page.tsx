@@ -360,7 +360,7 @@ export default function Home() {
             <a href="/event">
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                 <h3 className="text-xl font-semibold mb-2">STARVOICE</h3>
-                <p className="text-sm text-gray-300">Children's Singing Showcase (2020)</p>
+                <p className="text-sm text-gray-300">Children&apos;s Singing Showcase (2020)</p>
               </div>
             </a>
             <a href="/event">

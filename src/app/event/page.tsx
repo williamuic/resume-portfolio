@@ -128,7 +128,7 @@ export default function Event() {
 
         {/* STARVOICE Section */}
         <div className="mb-20">
-          <h2 className="text-2xl font-bold mb-6 text-center">STARVOICE –Children's Singing Showcase (2020)</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center">STARVOICE –Children&apos;s Singing Showcase (2020)</h2>
           <p className="text-center text-gray-300 mb-8 max-w-3xl mx-auto">Video Console Operator</p>
           <div className="relative w-full aspect-[16/9] max-h-[500px] rounded-xl shadow-2xl overflow-hidden mb-8 bg-gradient-to-br from-gray-900 to-black">
             <Image
