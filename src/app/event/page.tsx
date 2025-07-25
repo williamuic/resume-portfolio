@@ -17,9 +17,9 @@ const eventImages = [
 ];
 
 export default function Event() {
-  const [enlargedImage, setEnlargedImage] = useState(null);
+  const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
 
-  const handleImageClick = (imageSrc) => {
+  const handleImageClick = (imageSrc: string) => {
     setEnlargedImage(imageSrc);
   };
 
