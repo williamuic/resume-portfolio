@@ -1,8 +1,56 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
+// Event images data
+const theaterImages = [
+  "/EVENT/1/1.jpg",
+  "/EVENT/1/2.jpg",
+  "/EVENT/1/3.jpg",
+  "/EVENT/1/4.jpg",
+  "/EVENT/1/5.jpg",
+  "/EVENT/1/6.jpg",
+  "/EVENT/1/7.png",
+];
+
+const graduationImages = [
+  "/EVENT/2/1.jpg",
+  "/EVENT/2/2.jpg",
+  "/EVENT/2/3.jpg",
+  "/EVENT/2/4.jpg",
+  "/EVENT/2/5.jpg",
+  "/EVENT/2/6.jpg",
+  "/EVENT/2/7.jpg",
+  "/EVENT/2/8.jpg",
+  "/EVENT/2/9.jpg",
+];
+
+const starvoiceImages = [
+  "/EVENT/3/1.jpg",
+  "/EVENT/3/2.jpg",
+  "/EVENT/3/3.jpg",
+  "/EVENT/3/4.jpg",
+  "/EVENT/3/5.jpg",
+];
+
+const jinlingImages = [
+  "/EVENT/4/1.png",
+  "/EVENT/4/2.jpg",
+  "/EVENT/4/3.jpg",
+  "/EVENT/4/定帧.jpg",
+];
+
 export default function Home() {
+  const [enlargedImage, setEnlargedImage] = useState<string | null>(null);
+
+  const handleImageClick = (imageSrc: string) => {
+    setEnlargedImage(imageSrc);
+  };
+
+  const closeEnlargedImage = () => {
+    setEnlargedImage(null);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -339,15 +387,102 @@ export default function Home() {
       </section>
 
       {/* Event Section */}
-      <section id="event" className="relative min-h-screen flex items-center justify-center text-white">
+      <section id="event" className="relative min-h-screen flex items-center justify-center text-white py-16">
         <a href="#home" className="fixed top-8 left-8 z-20 text-white text-lg font-light tracking-widest hover:underline" style={{ fontFamily: 'inherit' }}>Home</a>
-        <div className="max-w-4xl mx-auto text-center z-10 relative">
-          <h2 className="text-3xl font-light tracking-widest mb-8 mt-16">EVENT</h2>
-          <h3 className="text-2xl font-bold mb-4">Oriental Zen-Brand Graduation Gala (2021)</h3>
-          <p className="text-lg leading-relaxed mb-8">Chief Director & On-site Execution Lead</p>
-          <a href="/event" className="inline-block bg-gradient-to-r from-pink-600 to-purple-600 hover:from-pink-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-            View Full Portfolio
-          </a>
+        <div className="max-w-6xl mx-auto z-10 relative px-8">
+          <h2 className="text-4xl font-bold tracking-widest mb-12 text-center">EVENT</h2>
+          
+          {/* On-campus Theater Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold mb-4 text-left">On-campus –1,000-seat Theater (2018–2021)</h3>
+            <p className="text-left text-gray-300 mb-6">President of the Student Union Arts Division; overall lead for faculty-level cultural events, including gala nights, film roadshows, and academic talks.</p>
+            <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-3 mb-12">
+              {theaterImages.map((src, idx) => (
+                <div
+                  key={src}
+                  className="relative aspect-[4/3] rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-white/10 hover:scale-105"
+                  onClick={() => handleImageClick(src)}
+                >
+                  <Image
+                    src={src}
+                    alt={`Theater ${idx + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Oriental Zen Graduation Gala Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold mb-4 text-left">Oriental Zen-Brand Graduation Gala (2021)</h3>
+            <p className="text-left text-gray-300 mb-6">Chief Director & On-site Execution Lead</p>
+            <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-9 gap-3 mb-12">
+              {graduationImages.map((src, idx) => (
+                <div
+                  key={src}
+                  className="relative aspect-[4/3] rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-white/10 hover:scale-105"
+                  onClick={() => handleImageClick(src)}
+                >
+                  <Image
+                    src={src}
+                    alt={`Graduation Gala ${idx + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* STARVOICE Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold mb-4 text-left">STARVOICE –Children&apos;s Singing Showcase (2020)</h3>
+            <p className="text-left text-gray-300 mb-6">Video Console Operator</p>
+            <div className="grid grid-cols-4 md:grid-cols-5 gap-3 mb-12">
+              {starvoiceImages.map((src, idx) => (
+                <div
+                  key={src}
+                  className="relative aspect-[4/3] rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-white/10 hover:scale-105"
+                  onClick={() => handleImageClick(src)}
+                >
+                  <Image
+                    src={src}
+                    alt={`STARVOICE ${idx + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Nanjing Jinling Section */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-bold mb-4 text-left">Nanjing Jinling Experimental Primary School Performance –Nanjing Poly Grand Theatre (2021)</h3>
+            <p className="text-left text-gray-300 mb-6">Member of the directing team; responsible for pre-event coordination and backstage execution.</p>
+            <div className="grid grid-cols-4 gap-3">
+              {jinlingImages.map((src, idx) => (
+                <div
+                  key={src}
+                  className="relative aspect-[4/3] rounded-lg overflow-hidden group cursor-pointer transition-all duration-300 shadow-md hover:shadow-xl hover:shadow-white/10 hover:scale-105"
+                  onClick={() => handleImageClick(src)}
+                >
+                  <Image
+                    src={src}
+                    alt={`Jinling ${idx + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -404,6 +539,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Enlarged Image Modal */}
+      {enlargedImage && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={closeEnlargedImage}
+        >
+          <div className="relative max-w-5xl max-h-full">
+            <Image
+              src={enlargedImage}
+              alt="Enlarged Event Image"
+              width={1200}
+              height={900}
+              className="object-contain w-full h-full rounded-lg"
+            />
+            <button
+              onClick={closeEnlargedImage}
+              className="absolute top-4 right-4 text-white bg-black/50 rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/70 transition-colors duration-300"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
