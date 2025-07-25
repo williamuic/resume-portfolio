@@ -89,7 +89,7 @@ export default function Home() {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [enlargedImage, currentImageIndex]);
+  }, [enlargedImage, currentImageIndex, goToPreviousImage, goToNextImage, closeEnlargedImage]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -572,7 +572,7 @@ export default function Home() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-pink-300/30">
                     <div className="text-2xl font-bold text-pink-400 mb-2">2020</div>
                     <h3 className="text-xl font-semibold mb-3">Communication University of China, Nanjing</h3>
-                    <p className="text-gray-300 leading-relaxed">Started BA in Film Directing with minor in Event Planning. Directed award-winning documentary "Clay Whispers" about Nanjing Clay Figurines intangible heritage. Led multiple cultural events as Student Union Arts Division President.</p>
+                    <p className="text-gray-300 leading-relaxed">Started BA in Film Directing with minor in Event Planning. Directed award-winning documentary &quot;Clay Whispers&quot; about Nanjing Clay Figurines intangible heritage. Led multiple cultural events as Student Union Arts Division President.</p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-pink-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -624,7 +624,7 @@ export default function Home() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-cyan-300/30">
                     <div className="text-2xl font-bold text-cyan-400 mb-2">2024</div>
                     <h3 className="text-xl font-semibold mb-3">MA Thesis & Luxury Insights</h3>
-                    <p className="text-gray-300 leading-relaxed">Conducted MA thesis research on "Social Media Word-of-Mouth Effect of Luxury Pop-Ups" revealing that 60%+ purchase decisions are driven by social buzz. Validated "Online Hype + Offline Experience + UGC Engagement" framework for Gen Z luxury consumers.</p>
+                    <p className="text-gray-300 leading-relaxed">Conducted MA thesis research on &quot;Social Media Word-of-Mouth Effect of Luxury Pop-Ups&quot; revealing that 60%+ purchase decisions are driven by social buzz. Validated &quot;Online Hype + Offline Experience + UGC Engagement&quot; framework for Gen Z luxury consumers.</p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cyan-500 rounded-full border-4 border-white shadow-lg"></div>
