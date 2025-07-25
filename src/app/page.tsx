@@ -190,13 +190,13 @@ export default function Home() {
             {/* 1. London Fashion Week */}
             <div className="group cursor-pointer">
               <a href="/fashion3">
-                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
+                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center aspect-[4/3] overflow-hidden">
                 <Image
                   src="/Personal_webpage/FASHION/25SS London Fashion Week.jpg"
                   alt="London Fashion Week"
                   width={288}
-                  height={288}
-                  className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  height={216}
+                  className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
                 </div>
                 <p className="mt-4 text-lg font-light">25SS London Fashion Week Runway</p>
@@ -205,13 +205,13 @@ export default function Home() {
             {/* 2. Shanghai Fashion Week */}
             <div className="group cursor-pointer">
               <a href="/fashion2">
-                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center" style={{height: '288px'}}>
+                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center aspect-[4/3] overflow-hidden">
                 <Image
                   src="/Personal_webpage/FASHION/23SS Shanghai Fashion Week Showroom.png"
                   alt="Shanghai Fashion Week"
                   width={288}
-                  height={288}
-                  className="object-contain w-full h-full transition-transform duration-300 group-hover:scale-105"
+                  height={216}
+                  className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
                 </div>
                 <p className="mt-4 text-lg font-light">23SS ShangHai Fashion Week Trade Show</p>
@@ -220,12 +220,12 @@ export default function Home() {
             {/* 3. Luxury Pop-Up */}
             <div className="group cursor-pointer">
               <a href="/fashion4">
-                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center aspect-[5/4] overflow-hidden">
+                <div className="bg-black rounded-xl shadow-lg w-full flex items-center justify-center aspect-[4/3] overflow-hidden">
                 <Image
                   src="/Fashion-Popup store/1.jpg"
                   alt="Luxury Pop-Up Loro Piana"
                   width={288}
-                  height={288}
+                  height={216}
                   className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
                 </div>
