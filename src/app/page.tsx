@@ -607,7 +607,7 @@ export default function Home() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-purple-300/30">
                     <div className="text-2xl font-bold text-purple-400 mb-2">2021</div>
                     <h3 className="text-xl font-semibold mb-3">Directing – Events – Commercial Shows</h3>
-                    <p className="text-gray-300 leading-relaxed">• Directed a commercial for Blispring toothpaste, winning the Bronze Award at the College Awards, China University Students Advertising Festival (08/2021).<br/>• While completing my degree, I served as President of the Student Union Arts Division, leading multiple campus galas and cultural events—greatly enhancing my project planning and team coordination skills.<br/>• In December, independently directed the Oriental Zen Graduation Gala, a commercial brand event that received highly positive feedback.</p>
+                    <p className="text-gray-300 leading-relaxed">• Directed a commercial for Blispring toothpaste, winning the Bronze Award at the College Awards, China University Students Advertising Festival (08/2021).<br/><br/>• While completing my degree, I served as President of the Student Union Arts Division, leading multiple campus galas and cultural events—greatly enhancing my project planning and team coordination skills.<br/><br/>• In December, independently directed the Oriental Zen Graduation Gala, a commercial brand event that received highly positive feedback.</p>
                   </div>
                 </div>
               </div>
@@ -618,7 +618,7 @@ export default function Home() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-blue-300/30">
                     <div className="text-2xl font-bold text-blue-400 mb-2">2022</div>
                     <h3 className="text-xl font-semibold mb-3">From Film to Fashion Management</h3>
-                    <p className="text-gray-300 leading-relaxed">• Directed and edited my graduation film &lt;My Dear Art&gt;, a ten-minute visual tribute to artistic passion.<br/>• Graduated with a BA in Broadcast and Television Editing and Directing, Communication University of China, Nanjing (09/2018–06/2022).<br/>  • Awarded Outstanding Graduate of CUCN<br/>  • Received Outstanding Graduation Design from the School of Broadcast and Television<br/>• Inspired by my passion for aesthetics, visual, and brand storytelling, I transitioned into the field of fashion.<br/>• Participated in the 23SS Shanghai Fashion Week Trade Show at Blooming Showroom (09/2022).<br/>• Completed a research report on DTC strategies in domestic Chinese beauty brands, marking my entry into business and branding studies.</p>
+                    <p className="text-gray-300 leading-relaxed">• Directed and edited my graduation film &lt;My Dear Art&gt;, a ten-minute visual tribute to artistic passion.<br/>• Graduated with a BA in Broadcast and Television Editing and Directing, Communication University of China, Nanjing (09/2018–06/2022).<br/>  • Awarded Outstanding Graduate of CUCN<br/>  • Received Outstanding Graduation Design from the School of Broadcast and Television<br/><br/>Inspired by my passion for aesthetics, visual, and brand storytelling, I transitioned into the field of fashion.<br/><br/>• Participated in the 23SS Shanghai Fashion Week Trade Show at Blooming Showroom (09/2022).<br/>• Completed a research report on DTC strategies in domestic Chinese beauty brands, marking my entry into business and branding studies.</p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -653,7 +653,7 @@ export default function Home() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-indigo-300/30">
                     <div className="text-2xl font-bold text-indigo-400 mb-2">2023</div>
                     <h3 className="text-xl font-semibold mb-3">First Steps into the Luxury World</h3>
-                    <p className="text-gray-300 leading-relaxed">• Worked from May to July at Loro Piana&apos;s Summer Resort Pop-up Store in Shenzhen, gaining first-hand experience in luxury retail, HNW client service, and visual merchandising.<br/>• Enrolled in the MA Luxury Brand Management program at Goldsmiths, University of London (09/2023).</p>
+                    <p className="text-gray-300 leading-relaxed">• Worked from May to July at Loro Piana&apos;s Summer Resort Pop-up Store in Shenzhen, gaining first-hand experience in luxury retail, HNW client service, and visual merchandising.<br/><br/>• Enrolled in the MA Luxury Brand Management program at Goldsmiths, University of London (09/2023).</p>
                   </div>
                 </div>
               </div>
@@ -664,7 +664,7 @@ export default function Home() {
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-cyan-300/30">
                     <div className="text-2xl font-bold text-cyan-400 mb-2">2024</div>
                     <h3 className="text-xl font-semibold mb-3">Brand Knowledge & Practical Growth</h3>
-                    <p className="text-gray-300 leading-relaxed">• Deepened expertise in marketing, digital communication, project management, and retail technologies throughout the year.<br/>• Completed a dissertation titled &quot;Chinese Consumers&apos; Attitudes Toward Luxury Pop-up Stores and Key Purchase Drivers.&quot;<br/>• Participated in 25SS London Fashion Week runway internship with Helen Anthony, where I practiced styling, improved cross-cultural communication, and contributed backstage photography to enrich the brand&apos;s visual archive.</p>
+                    <p className="text-gray-300 leading-relaxed">• Deepened expertise in marketing, digital communication, project management, and retail technologies throughout the year.<br/>• Completed a dissertation titled &quot;Chinese Consumers&apos; Attitudes Toward Luxury Pop-up Stores and Key Purchase Drivers.&quot;<br/><br/>• Participated in 25SS London Fashion Week runway internship with Helen Anthony, where I practiced styling, improved cross-cultural communication, and contributed backstage photography to enrich the brand&apos;s visual archive.</p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-cyan-500 rounded-full border-4 border-white shadow-lg"></div>
@@ -709,9 +709,9 @@ export default function Home() {
             {/* Email */}
             <a 
               href="mailto:Zhangchuqi2023@163.com"
-              className="bg-white hover:bg-gray-50 px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200"
+              className="text-black text-lg font-light tracking-wide hover:text-gray-600 transition-colors duration-300"
             >
-              <div className="text-lg font-semibold text-gray-800">Zhangchuqi2023@163.com</div>
+              Zhangchuqi2023@163.com
             </a>
 
             {/* LinkedIn */}
@@ -719,9 +719,9 @@ export default function Home() {
               href="https://www.linkedin.com/in/eri-chuqi-zhang"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white hover:bg-gray-50 px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-gray-200"
+              className="text-black text-lg font-light tracking-wide hover:text-gray-600 transition-colors duration-300"
             >
-              <div className="text-lg font-semibold text-gray-800">www.linkedin.com/in/eri-chuqi-zhang</div>
+              www.linkedin.com/in/eri-chuqi-zhang
             </a>
           </div>
         </div>
