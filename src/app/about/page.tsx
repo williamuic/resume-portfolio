@@ -11,7 +11,7 @@ export default function About() {
         <h1 className="text-4xl md:text-5xl font-serif font-bold tracking-widest text-center mb-2" style={{letterSpacing: '0.1em'}}>– Eri Zhang <span className="font-sans text-pink-200 text-2xl align-top">(EH‑ree)</span></h1>
         <div className="h-1 w-16 bg-pink-300 mx-auto my-6 rounded-full" />
         <section className="text-lg md:text-xl font-light leading-relaxed space-y-6 font-sans">
-          <p>I&apos;m a London–based creative professional working at the intersection of fashion, film and off-line events.</p>
+          <p>I&apos;m a creative professional working at the intersection of fashion, film and off-line events.</p>
           <p>With a dual foundation in cinematic storytelling and global brand management, I bridge creative vision and commercial impact for luxury brands. I hold a BA in Film Directing (minor in Event Planning) from Communication University of China, Nanjing, and an MA in Luxury Brand Management (with Merit) from Goldsmiths, University of London. By fusing narrative-driven film techniques with data‑informed, omnichannel marketing strategies, I help brands forge emotional connections and achieve sustainable growth in the digital age.</p>
           <ul className="list-disc pl-6 space-y-2">
             <li><b>Award‑Winning Film Director</b><br/>Wrote and directed multiple documentaries and branded shorts, winning three national film competition awards for my ability to translate brand values into compelling visual stories.</li>
